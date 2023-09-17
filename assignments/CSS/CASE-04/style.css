@@ -1,0 +1,58 @@
+body>main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /*top: 0;*/
+}
+body>main:first-child {
+    background-color: yellow;
+}
+body>main:nth-child(2) {
+    background-color: palegreen;
+}
+body>main:nth-child(3) {
+    background-color: mediumpurple;
+}
+body>main:nth-child(4) {
+    background-color: orange;
+}
+
+h1 {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    color: white;
+    font-family: Arial;
+    height: 10vh;
+    padding: 5vh 15vh 0;
+}
+
+.h1 {
+    z-index: 10;
+    background: url("");
+}
+.h2 {
+    z-index: 10;
+    background-color: #005900;
+}
+.h3 {
+    z-index: 10;
+    background-color: rgb(30, 0, 100);
+}
+.h4 {
+    z-index: 10;
+    background-color: #704600;
+}
+
+div {
+    font-size: 80px;
+    font-family: Algerian;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
