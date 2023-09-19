@@ -148,10 +148,12 @@
             left: 44%;
             top: 70%;
         }
+        .journey{
+            position: relative;
+        }
         .journey-topic{
             position: absolute;
             left: 30px;
-            top: 210%;
             font-weight: 600;
             font-size: 32px;
         }
@@ -160,11 +162,11 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            padding: 40px 10%;
+            padding: 80px 10%;
         }
         .journey-container div{
             height: calc(100%/4);
-            width: 80%;
+            width: 90%;
             border: 2px solid white;
             padding: 2%;
         }
@@ -178,11 +180,14 @@
         .skills-topic{
             font-weight: 600;
             font-size: 32px;
+            position: absolute;
+            left: 30px;
         }
         .skills-container{
             position: absolute;
             left: 30px;
-            top: 300%;
+            top: 90%;
+            padding: 40px 10%;
         }
         /*services*/
         .services{
@@ -210,6 +215,10 @@
         .services-list h4{
             font-size: 24px;
             margin: 20px 0 ;
+        }
+        .services-list div:hover{
+            background-color: #FF014F;
+            color: #ffffff;
         }
 
         /*projects*/
@@ -260,7 +269,7 @@
             border-radius: 50px;
             position: absolute;
             left: 10%;
-            top: 795%;
+            top: 775%;
         }
         .social-media-container div{
             display: flex;
@@ -394,9 +403,8 @@
                 </p>
             </div>
         </div>
-
+        <h4 class="skills-topic">Skills</h4>
         <div class="skills-container">
-            <h4 class="skills-topic">Skills</h4>
             <p>HTML</p>
             <p>CSS</p>
             <p>Java</p>
@@ -410,13 +418,13 @@
     <section class="services">
         <h3 class="topic-section" id="services">My <span>Services</span></h3>
         <div class="services-list">
-            <div><i class="fa-solid fa-laptop-code" style="color: #FF014F;"></i><h4>Web Design</h4>
+            <div><i class="fa-solid fa-laptop-code" style="color: #ffffff;"></i><h4>Web Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid, commodi consequatur cupiditate dolorem eligendi nobis perferendis qui, rem sint temporibus tenetur vero? Accusamus ea eius facere in laudantium!</p>
             </div>
-            <div><i class="fa-solid fa-desktop" style="color: #FF014F;"></i><h4>UI/UX Design</h4>
+            <div><i class="fa-solid fa-desktop" style="color: #ffffff;"></i><h4>UI/UX Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet architecto aspernatur cumque deleniti dolorem dolores, enim facilis iure molestias necessitatibus, nulla numquam odio odit officia, quaerat quisquam repellendus voluptas!</p>
             </div>
-            <div><i class="fa-solid fa-desktop" style="color: #FF014F;"></i><h4>Graphic Design</h4>
+            <div><i class="fa-solid fa-desktop" style="color: #ffffff;"></i><h4>Graphic Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci autem delectus dignissimos eligendi, enim facere inventore labore libero maiores natus necessitatibus officiis pariatur, perferendis quia ratione soluta. Nisi!</p>
             </div>
         </div>
@@ -458,10 +466,6 @@
 <main>
     <section>
         <h3 class="topic-section" id="gallery">My <span>Gallery</span></h3>
-        <img src="assets/images/image_icon.png" alt="image" width="100" height="100">
-        <img src="assets/images/image_icon.png" alt="image" width="100" height="100"><br>
-        <img src="assets/images/image_icon.png" alt="image" width="100" height="100">
-        <img src="assets/images/image_icon.png" alt="image" width="100" height="100">
     </section>
 </main>
 
@@ -486,9 +490,9 @@
         </div>
     </section>
 </main>
-
+<hr>
 <footer>
-    <center>Anuki Dilara</center>
+    <center>Anuki Dilara<i class="fa-thin fa-heart"></i></center>
 </footer>
 </body>
 </html>
