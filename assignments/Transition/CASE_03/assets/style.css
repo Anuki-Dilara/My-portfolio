@@ -1,0 +1,54 @@
+*{
+    background: gray;
+}
+.layer1{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 400px;
+    height: 400px;
+}
+.layer1 img{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    border: 2px solid white;
+    position: absolute;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.5s;
+}
+.layer2{
+    color: white;
+    width: 400px;
+    height: 0;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+    transition: height 0.5s;
+    opacity: 0.5;
+}
+.layer2 img{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+div:hover .layer2{
+    height: 100%;
+}
+
+
