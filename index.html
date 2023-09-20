@@ -4,393 +4,10 @@
     <meta charset="UTF-8">
     <title>Anuki Dilara-MyPortfolio</title>
     <meta name="author" content="Anuki Dilara">
-   <!-- <link rel="stylesheet" href="assets/style.css`">-->
-    <link rel="stylesheet" href="assets/normalize.css">
-    <link rel="stylesheet" href="assets/font-awsome/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family:  'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body{
-            background: #000712;
-            color: white;
-        }
-
-        .header{
-            position: fixed;
-            width: 100%;
-            right: 0;
-            left: 0;
-            display: flex;
-            padding: 20px 10%;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-            background: transparent;
-        }
-        .nav_bar{
-            position: absolute;
-            right: 130px;
-            top: 10px;
-        }
-        .nav_bar li{
-            display: inline-block;
-            padding: 15px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .nav_bar a{
-            text-decoration: none;
-            color: #FF014F;
-            font-size: 18px;
-        }
-
-        section{
-            height: 100vh;
-        }
-
-       .home{
-           position: relative;
-           width: 100%;
-           height: 100vh;
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
-           padding: 50px 10% 0;
-       }
-
-       .home-content h3{
-           font-size: 32px;
-           font-weight: 700;
-           margin: 0px 0px 2px;
-       }
-
-       .home-content h1{
-           font-size:50px;
-           font-weight: 700;
-           margin: -2px 0px 2px;
-       }
-
-       .social-media{
-           padding: 10% 0;
-       }
-
-       .social-media a{
-           display: inline-flex;
-           justify-content: center;
-           align-items: center;
-           width: 40px;
-           height: 40px;
-           border-radius: 50%;
-           border: 2px solid #FF014F;
-           text-decoration: none;
-           margin: 30px 20px 30px 0;
-           font-size: 20px;
-       }
-
-       .social-media a:hover{
-           box-shadow: 0 0 10px #FF014F;
-       }
-
-        .topic-section{
-            text-align: center;
-        }
-        h3{
-            font-size: 45px;
-            font-weight: 750;
-            margin: 110px 0 0 0;
-        }
-        h3 span{
-            color: #FF014F;
-        }
-
-        main:nth-child(2)>section>img{
-            height: 100%;
-            width: 57%;
-            margin: 18px 0 0 0;
-        }
-
-        main:nth-child(2)>section>a{
-            font-size: 40px;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            margin: auto;
-        }
-
-        /*----about-----*/
-        .about{
-            position: relative;
-
-        }
-        .about img{
-            height: 60%;
-            width: 40%;
-        }
-        .about-container{
-            position: absolute;
-            display: flex;
-            justify-content: space-between;
-            padding: 60px 12% 0 12%;
-            height: 100%;
-        }
-        .about-container p{
-            height: 50%;
-            width: 60%;
-            text-align: justify;
-            margin: 50px 0 0 0;
-        }
-        .about button {
-            height: 50px;
-            width: 140px;
-            border:4px solid #FF014F;
-            background-color: transparent;
-            color: white;
-            font-weight: bold;
-            border-radius: 20px;
-            position: absolute;
-            left: 44%;
-            top: 80%;
-        }
-        .journey{
-            position: relative;
-        }
-        .journey-topic{
-            position: absolute;
-            left: 30px;
-            font-weight: 600;
-            font-size: 32px;
-        }
-        .journey-container{
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: 80px 10%;
-        }
-        .journey-container div{
-            height: calc(100%/4);
-            width: 90%;
-            border: 2px solid white;
-            padding: 2%;
-        }
-        .journey-container div h5{
-            color: #FF014F;
-            font-size: 16px;
-        }
-        .journey-container div p{
-            font-size: 18px;
-        }
-        .skills-topic{
-            font-weight: 600;
-            font-size: 32px;
-            position: absolute;
-            left: 30px;
-        }
-        .skills-container{
-            position: absolute;
-            left: 30px;
-            top: 90%;
-            padding: 40px 10%;
-        }
-        /*services*/
-        .services{
-            padding: 60px 10%;
-        }
-        .services-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            grid-gap: 40px;
-            margin: 40px 20px;
-        }
-        .services-list div{
-            background: black;
-            padding: 30px ;
-            font-size: 13px;
-            font-weight: 100;
-            border-radius: 20px ;
-            border: 1px solid white;
-            text-align: justify;
-        }
-        .services-list div i{
-            font-size: 60px;
-            margin: 0 0 20px 0;
-        }
-        .services-list h4{
-            font-size: 24px;
-            margin: 20px 0 ;
-        }
-        .services-list div:hover{
-            background-color: #FF014F;
-            color: #ffffff;
-        }
-
-        /*projects*/
-        .projects{
-            padding: 60px 10%;
-            width: 100%;
-            height: 100vh;
-            position: relative;
-        }
-        .projects-list{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 30px;
-            margin: 40px 10px;
-        }
-        .projects a{
-            right: 100px;
-            bottom: 0px;
-            margin: auto;
-            position: absolute;
-            font-size: 40px;
-        }
-        .projects-list div img{
-            width: 100%;
-            height: 86%;
-            border: 5px solid white;
-            border-radius: 15%;
-        }
-        .projects-list div h4{
-            font-size: 20px;
-            padding: 10px;
-            text-align: center;
-
-        }
-
-        /*assignment*/
-
-        .assignment-container{
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .assignment-container div{
-            border: 2px solid white;
-            height: 60%;
-            width: 50%;
-            position: relative;
-            margin: 10px;
-        }
-
-        .assignment-container div img{
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            position: absolute;
-        }
-
-        .assignment-container div h4{
-            font-size: 20px;
-            padding: 10px;
-            text-align: center;
-
-        }
-
-        /*gallery*/
-        .gallery{
-            position: relative;
-        }
-
-        .gallery-container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            height: 100%;
-            align-items: center;
-            margin: 0;
-            padding: 60px 10%;
-
-        }
-
-        .column{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            align-items: center;
-            width: 100%;
-        }
-
-        .column img{
-            border: 2px solid black;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 50%;
-            border-radius: 10px;
-        }
-
-        /*contact*/
-        .contact{
-            position: relative;
-        }
-        .contact-container{
-            display: inline-flex;
-            justify-content: space-between;
-            width: 100%;
-            height: 100vh;
-        }
-        .social-media-container{
-            flex-basis: 45%;
-            height: 65%;
-            width: 20%;
-            background: #262626;
-            border-radius: 50px;
-            position: absolute;
-            left: 10%;
-            top: 10%;
-        }
-        .social-media-container div{
-            display: flex;
-            flex-direction: column;
-            height: calc(100%/3);
-            align-items: center;
-            justify-content: center;
-        }
-        .social-media-container div i{
-            width: 50px;
-            height: 50px;
-            font-size: 30px;
-        }
-        .message-section{
-            flex-basis: 65%;
-        }
-
-        form input, form textarea{
-            width: 80%;
-            border: 0;
-            outline: none;
-            background: #262626;
-            padding: 15px;
-            margin: 25px 0px 2px 0px;
-            color: #fff;
-            font-size: 18px;
-            border-radius: 20px;
-            position: relative;
-            left: 50%;
-        }
-        .message-section button{
-            height: 40px;
-            width: 12%;
-            color: white;
-            border: 4px solid #FF014F;
-            border-radius: 20px;
-            background: transparent;
-            position: absolute;
-            left: 70%;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/font-awsome/css/all.min.css">
+    <link rel="stylesheet" href="assets/normalize.css">
 </head>
 <body>
 
@@ -409,10 +26,16 @@
 
 <main>
    <section class="home">
-       <div class="home-content">
-           <h3>Hello!, I am</h3>
-           <h1>Anuki Dilara</h1>
-           <h3>And,<br> I am a Front-End Developer</h3>
+       <img src="assets/images/homeImage2.png" alt="anuki dilara" >
+       <div class="home-container">
+           <div class="headings">
+               <h3>Hello!</h3>
+               <h1>I am Anuki Dilara</h1>
+           </div>
+           <p>
+               I am trying to be a front end developer.
+           </p>
+
 
            <div class="social-media">
                <a href="https://www.linkedin.com/in/anuki-dilara-2a2b2a228" target="_blank">
@@ -433,7 +56,7 @@
            </div>
        </div>
 
-       <img src="assets/images/homeImage2.png" alt="anuki dilara" >
+
        <a href="index.html"><i class="fa-solid fa-circle-up" style="color: #FF014F;"></i></a>
    </section>
 </main>
@@ -485,9 +108,13 @@
         </div>
         <h4 class="skills-topic">Skills</h4>
         <div class="skills-container">
-
-        </div>
-
+            <img src="assets/images/skills/sql.png"/>
+            <img src="assets/images/skills/Python-logo-notext.svg.png"/>
+            <img src="assets/images/skills/JavaScript-logo.png"/>
+            <img src="assets/images/skills/java-logo.png"/>
+            <img src="assets/images/skills/ISO_C++_Logo.svg.png"/>
+            <img src="assets/images/skills/HTML5_logo_and_wordmark.svg.png"/>
+            <img src="assets/images/skills/css-logo.png" /></div>
     </section>
 </main>
 

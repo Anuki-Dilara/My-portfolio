@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
     box-sizing: border-box;
     font-family:  'Poppins', sans-serif;
     scroll-behavior: smooth;
@@ -22,6 +24,7 @@ body{
     align-items: center;
     z-index: 100;
     background: transparent;
+    height: 30px;
 }
 .nav_bar{
     position: absolute;
@@ -49,35 +52,67 @@ section{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 50px 10% 0;
 }
 
-.home-content h3{
+.home-container{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+.home-container div h3{
     font-size: 32px;
     font-weight: 700;
     margin: 0px 0px 2px;
 }
 
-.home-content h1{
-    font-size:50px;
+.home-container div h1{
+    font-size:4.5rem;
     font-weight: 700;
     margin: -2px 0px 2px;
+}
+
+.social-media{
+    padding: 10% 0 ;
 }
 
 .social-media a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 2px solid #FF014F;
     text-decoration: none;
-    margin: 30px 5px 30px 0;
+    margin: 30px 20px 30px 0;
     font-size: 20px;
 }
+
+.social-media a:hover{
+    box-shadow: 0 0 10px #FF014F;
+}
+
+main:nth-child(2)>section>img{
+    height: 100%;
+    width: 57%;
+    margin: 18px 0 0 0;
+    border-style: none;
+    position: absolute;
+    left: 40%;
+    top: 4%;
+}
+
+main:nth-child(2)>section>a{
+    font-size: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin: auto;
+}
+
 .topic-section{
     text-align: center;
 }
@@ -90,34 +125,21 @@ h3 span{
     color: #FF014F;
 }
 
-main:nth-child(2)>section>img{
-    height: 95%;
-    width: 57%;
-    margin: 18px 0 0 0;
-}
-
-main:nth-child(2)>section>a{
-    font-size: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    margin: auto;
-}
-
 /*----about-----*/
 .about{
     position: relative;
 
 }
 .about img{
-    height: 25%;
-    width: 30%;
+    height: 60%;
+    width: 40%;
 }
 .about-container{
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    padding: 60px 15% 0 15%;
+    padding: 60px 12% 0 12%;
+    height: 100%;
 }
 .about-container p{
     height: 50%;
@@ -135,12 +157,14 @@ main:nth-child(2)>section>a{
     border-radius: 20px;
     position: absolute;
     left: 44%;
-    top: 70%;
+    top: 80%;
+}
+.journey{
+    position: relative;
 }
 .journey-topic{
     position: absolute;
     left: 30px;
-    top: 210%;
     font-weight: 600;
     font-size: 32px;
 }
@@ -149,11 +173,11 @@ main:nth-child(2)>section>a{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 40px 10%;
+    padding: 80px 10%;
 }
 .journey-container div{
     height: calc(100%/4);
-    width: 80%;
+    width: 90%;
     border: 2px solid white;
     padding: 2%;
 }
@@ -167,11 +191,23 @@ main:nth-child(2)>section>a{
 .skills-topic{
     font-weight: 600;
     font-size: 32px;
+    position: absolute;
+    left: 30px;
 }
 .skills-container{
     position: absolute;
     left: 30px;
-    top: 300%;
+    top: 90%;
+    padding: 40px 10%;
+    height: 200px;
+    width: 80%;
+}
+.skills-container img{
+    height: 80px;
+    width: 80px;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 10px;
 }
 /*services*/
 .services{
@@ -199,6 +235,10 @@ main:nth-child(2)>section>a{
 .services-list h4{
     font-size: 24px;
     margin: 20px 0 ;
+}
+.services-list div:hover{
+    background-color: #FF014F;
+    color: #ffffff;
 }
 
 /*projects*/
@@ -234,7 +274,77 @@ main:nth-child(2)>section>a{
 
 }
 
+/*assignment*/
+
+.assignment-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.assignment-container div{
+    border: 2px solid white;
+    height: 60%;
+    width: 50%;
+    position: relative;
+    margin: 10px;
+}
+
+.assignment-container div img{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.assignment-container div h4{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+/*gallery*/
+.gallery{
+    position: relative;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 60px 10%;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+}
+
+.column img{
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
 /*contact*/
+.contact{
+    position: relative;
+}
 .contact-container{
     display: inline-flex;
     justify-content: space-between;
@@ -249,7 +359,7 @@ main:nth-child(2)>section>a{
     border-radius: 50px;
     position: absolute;
     left: 10%;
-    top: 795%;
+    top: 10%;
 }
 .social-media-container div{
     display: flex;
