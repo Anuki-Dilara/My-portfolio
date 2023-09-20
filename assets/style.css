@@ -261,6 +261,9 @@ h3 span{
     position: absolute;
     font-size: 40px;
 }
+.projects-list div{
+    position: center;
+}
 .projects-list div img{
     width: 100%;
     height: 86%;
@@ -350,13 +353,13 @@ h3 span{
     justify-content: space-between;
     width: 100%;
     height: 100vh;
+    position: absolute;
 }
 .social-media-container{
-    flex-basis: 45%;
-    height: 65%;
+    height: 60%;
     width: 20%;
     background: #262626;
-    border-radius: 50px;
+    border-radius: 25px;
     position: absolute;
     left: 10%;
     top: 10%;
@@ -368,35 +371,149 @@ h3 span{
     align-items: center;
     justify-content: center;
 }
+
+.social-media-container div h5{
+    text-align: center;
+}
 .social-media-container div i{
     width: 50px;
     height: 50px;
     font-size: 30px;
 }
 .message-section{
-    flex-basis: 65%;
+    position: absolute;
+    left: 34%;
+    top: 10%;
+    width: 50%;
 }
 
 form input, form textarea{
-    width: 80%;
+    width: 100%;
     border: 0;
     outline: none;
     background: #262626;
     padding: 15px;
-    margin: 25px 0px 2px 0px;
+    /*margin: 25px 0px 2px 0px;*/
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
     position: relative;
-    left: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
 }
 .message-section button{
-    height: 40px;
-    width: 12%;
+    height: 10%;
+    width: 30%;
     color: white;
     border: 4px solid #FF014F;
     border-radius: 20px;
     background: transparent;
     position: absolute;
     left: 70%;
+}
+
+@media (min-width: 1024px)and (max-width: 1440px){
+    .home-container div h1{
+        font-size:3.5rem;
+    }
+
+    .about img {
+        height: 50%;
+        width: 40%;
+    }
+
+    .skills-container img{
+        height: 70px;
+        width: 70px;
+        margin: 0 5px;
+    }
+
+    .projects-list{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .projects-list div h4 {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+
+    .projects-list div h4 {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 768px)and (max-width: 1024px) {
+    .home-container div h1 {
+        font-size: 2.5rem;
+    }
+
+    .social-media a {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .skills-container img {
+        height: 60px;
+        width: 50px;
+        margin: 0 5px;
+    }
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 10px;
+        margin: 10px 20px;
+    }
+    .services-list div {
+        padding: 20px;
+        font-size: 13px;
+        font-weight: 100;
+    }
+    .services-list div i {
+        font-size: 40px;
+        margin: 0 0 20px 0;
+    }
+    .services-list h4 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .projects-list div h4 {
+        font-size: 15px;
+    }
+    .projects-list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .projects a {
+        right: 50px;
+        bottom: 0px;
+        margin: auto;
+        position: absolute;
+        font-size: 30px;
+    }
+
+    .assignment-container div {
+        width: 40%;
+    }
+
+    .assignment-container div img {
+        width: 100%;
+    }
+
+    .social-media-container {
+        height: 70%;
+    }
+    .message-section button {
+        width: 40%;
+        border: 3px solid #FF014F;
+        left: 60%;
+    }
+    .social-media-container div h5 {
+        text-align: center;
+        font-size: 11px;
+    }
 }
