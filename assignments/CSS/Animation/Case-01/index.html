@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        section{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+        }
+        div{
+            background: #FF014F;
+            height: 100px;
+            width: 100px;
+            border-radius: 25px;
+
+            animation-name: anima;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes anima {
+            0%{
+               margin-top: 0;
+                margin-left: 0;
+                transform: rotate(0deg);
+                background-color: blue;
+            }
+            25%{
+                margin-top: 0;
+                margin-left: 400px;
+                transform: rotate(180deg);
+                background-color: yellow;
+            }
+            50%{
+                margin-top: 400px;
+                margin-left: 400px;
+                transform: rotate(360deg);
+                background-color: yellow;
+            }
+            75%{
+                margin-top: 400px;
+                margin-left: 0px;
+                transform: rotate(180deg);
+                background-color: red;
+            }
+            100%{
+                margin-top: 0px;
+                margin-left: 0px;
+                transform: rotate(0deg);
+                background-color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>
