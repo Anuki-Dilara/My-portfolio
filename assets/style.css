@@ -290,6 +290,10 @@ h3 span{
 }
 .projects-list div{
     position: center;
+    transition: .5s;
+}
+.projects-list div:hover{
+    transform: scale(1.1);
 }
 .projects-list div img{
     width: 100%;
