@@ -232,10 +232,11 @@ h3 span{
 }
 .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin: 40px 20px;
 }
+
 .services-list div{
     background: #202337;
     padding: 30px ;
@@ -261,10 +262,12 @@ h3 span{
 .services-list div p{
     text-align: center;
 }
+
 .services-list div:hover{
     background-color: #FF014F;
     color: #ffffff;
 }
+
 
 /*======================================================projects===============================================*/
 .projects{
