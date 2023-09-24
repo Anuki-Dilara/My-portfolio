@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>assignments</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body{
+            background: #000712;
+            color: white;
+        }
+
+        .topic-section{
+            text-align: center;
+        }
+        h3{
+            font-size: 45px;
+            font-weight: 750;
+            margin: 40px 0;
+            font-family: Quicksand, sans-serif;
+        }
+        h3 span{
+            color: #FF014F;
+            font-family: Quicksand, sans-serif;
+        }
+
+        .assignments{
+            padding: 5px 5%;
+        }
+        .assignment-container{
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .assignment-container .assignment-card{
+            position: relative;
+            border-radius: 2rem;
+            box-shadow: 0 0 1rem black;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .assignment-card img{
+            width: 100%;
+            transition: 5s ease;
+        }
+        .assignment-card:hover img{
+            transform: scale(1.1);
+        }
+
+        .assignment-card .assigment-layer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000712;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            -ms-flex-align: center;
+            padding: 0 4rem;
+            transform: translateY(100%);
+            transition: .5s ease;
+            opacity: 0.8;
+        }
+        .assignment-card:hover .assigment-layer{
+            transform: translateY(0);
+        }
+
+        .assigment-layer h4{
+           font-size: 1.5rem;
+            opacity: 2;
+        }
+
+        .assigment-layer a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin: 10%;
+        }
+        .assigment-layer a img{
+            width: 30px;
+            height: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<main>
+    <section class="assignments">
+        <h3 class="topic-section" id="assignments">My <span>Assignments</span></h3>
+        <div class="assignment-container">
+            <div class="assignment-card">
+                <img src="assets/images/assignment-image.png"/>
+                <div class="assigment-layer">
+                    <h4>Assignment 4</h4>
+                    <a href="http://localhost:63342/My-portfolio/My%20portfolio/assignments/CSS/Cases/CASE-04/index.html?_ijt=13lp04kuffnc4tgut8aofuktp7&_ij_reload=RELOAD_ON_SAVE">
+                        <img src="assets/images/icons/expand-arrows.png">
+                    </a>
+                </div>
+            </div>
+            <div class="assignment-card">
+                <img src="assets/images/assignment-image.png"/>
+                <div class="assigment-layer">
+                    <h4>Assignment 5</h4>
+                    <a href="http://localhost:63342/My-portfolio/My%20portfolio/assignments/CSS/Cases/CASE-05/index.html?_ijt=13lp04kuffnc4tgut8aofuktp7&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                        <img src="assets/images/icons/expand-arrows.png">
+                    </a>
+                </div>
+            </div>
+            <div class="assignment-card">
+                <img src="assets/images/assignment-image.png"/>
+                <div class="assigment-layer">
+                    <h4>Assignment 6</h4>
+                    <a href="http://localhost:63342/My-portfolio/My%20portfolio/assignments/CSS/Cases/CASE-06/index.html?_ijt=13lp04kuffnc4tgut8aofuktp7&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                        <img src="assets/images/icons/expand-arrows.png">
+                    </a>
+                </div>
+            </div>
+            <div class="assignment-card">
+                <img src="assets/images/assignment-image.png"/>
+                <div class="assigment-layer">
+                    <h4>Assignment 7</h4>
+                    <a href="http://localhost:63342/My-portfolio/My%20portfolio/assignments/CSS/Transition/Case_01/index.html?_ijt=13lp04kuffnc4tgut8aofuktp7&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                        <img src="assets/images/icons/expand-arrows.png">
+                    </a>
+                </div>
+            </div>
+            <div class="assignment-card">
+                <img src="assets/images/assignment-image.png"/>
+                <div class="assigment-layer">
+                    <h4>Assignment 8</h4>
+                    <a href="http://localhost:63342/My-portfolio/My%20portfolio/assignments/CSS/Transition/Case_02/index.html?_ijt=13lp04kuffnc4tgut8aofuktp7&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                        <img src="assets/images/icons/expand-arrows.png">
+                    </a>
+                </div>
+            </div>
+            <div class="assignment-card">
+                <img src="assets/images/assignment-image.png"/>
+                <div class="assigment-layer">
+                    <h4>Assignment 9</h4>
+                    <a href="http://localhost:63342/My-portfolio/My%20portfolio/assignments/CSS/Transition/Case_03/index.html?_ijt=a85qu0i0gi88f3nk3drj1906gl&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                        <img src="assets/images/icons/expand-arrows.png">
+                    </a>
+                </div>
+            </div>
+            <div class="assignment-card">
+                <img src="assets/images/assignment-image.png"/>
+                <div class="assigment-layer">
+                    <h4>Assignment 10</h4>
+                    <a href="http://localhost:63342/My-portfolio/My%20portfolio/assignments/CSS/Animation/Case-01/index.html?_ijt=n999vft1e3ic8qslhn72eh3vln&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                        <img src="assets/images/icons/expand-arrows.png">
+                    </a>
+                </div>
+            </div>
+            <div class="assignment-card">
+                <img src="assets/images/assignment-image.png"/>
+                <div class="assigment-layer">
+                    <h4>Assignment 11</h4>
+                    <a href="http://localhost:63342/My-portfolio/My%20portfolio/assignments/CSS/Animation/Case-03/index.html?_ijt=n999vft1e3ic8qslhn72eh3vln&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                        <img src="assets/images/icons/expand-arrows.png">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+</body>
+</html>
