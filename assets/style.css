@@ -85,12 +85,17 @@ section{
     height: 370px;
     background: #202337;
     border-radius: 20px;
+    transition: .5s;
+    box-shadow: black 2px 2px 0 0;
 }
 .home-image img{
     top: 10%;
     height: 90%;
     width: 100%;
     position: relative;
+}
+.home-image:hover{
+    transform: scale(1.1);
 }
 .shadow-border{
     position: absolute;
@@ -260,7 +265,7 @@ h3 span{
     height: 400px;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     align-items: center;
     justify-content: center;
 }
