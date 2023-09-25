@@ -13,6 +13,8 @@
 body{
     background: #000712;
     color: white;
+    /*background: #181A2D;*/
+    /*color: #9A98A8;*/
 }
 
 .header{
@@ -25,7 +27,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: #202337;
+    background: #000712;
     height: 40px;
 }
 .nav_bar{
@@ -56,28 +58,81 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 10% 0;
+    padding: 30px 10% 0;
+    color: #9A98A8;
 }
-
 .home-container{
-    position: absolute;
+    /* position: relative;*/
     left: 10%;
+    top: 10%;
+}
+.headings{
+    position: absolute;
+    top: 12%;
+    left: 22%;
+}
+.headings h1{
+    font-size: 50px;
+    font-family: Quicksand, sans-serif;
+}
+.headings h1 span{
+    font-size: 50px;
+    font-family: Quicksand, sans-serif;
+    color: #FF014F;
+}
+.home-image{
+    width: 300px;
+    height: 370px;
+    background: #202337;
+    border-radius: 20px;
+}
+.home-image img{
+    top: 10%;
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+.shadow-border{
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    width: 300px;
+    height: 370px;
+    border: 2px solid #202337;
+    border-radius: 20px;
+}
+.home-container p{
+    position: absolute;
+    left: 22%;
     top: 40%;
+    width: 200px;
+    padding: 10px;
 }
-.home-container div h3{
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0px 0px 2px;
+.status{
+    position: absolute;
+    top: 48%;
+    left: 63%;
 }
-
-.home-container div h1{
-    font-size:4.5rem;
-    font-weight: 700;
-    margin: -2px 0px 2px;
+.status h3{
+    font-family: Quicksand, sans-serif;
+    font-size: 40px;
 }
-
+.status h3 span{
+    color: #8C6FFF;
+    font-family: Quicksand, sans-serif;
+    font-size: 30px;
+}
+.line {
+    border: 2px solid #8C6FFF;
+    border-radius: 10px;
+    position: absolute;
+    top: 81%;
+    left: 63%;
+    width: 10%;
+}
 .social-media{
-    padding: 10% 0 ;
+    padding: 5% 0 ;
+    position: absolute;
 }
 
 .social-media a{
@@ -89,22 +144,12 @@ section{
     border-radius: 50%;
     border: 2px solid #FF014F;
     text-decoration: none;
-    margin: 30px 20px 30px 0;
+    margin: 10px;
     font-size: 20px;
 }
 
 .social-media a:hover{
     box-shadow: 0 0 10px #FF014F;
-}
-
-main:nth-child(2)>section>img{
-    height: 90%;
-    width: 50%;
-    margin: 20px 0 0 0;
-    border-style: none;
-    position: absolute;
-    left: 40%;
-    top: 10%;
 }
 
 main:nth-child(2)>section>a{
@@ -123,6 +168,7 @@ h3{
     font-weight: 750;
     margin: 60px 0;
     font-family: Quicksand, sans-serif;
+    color: white;
 }
 h3 span{
     color: #FF014F;
@@ -144,7 +190,7 @@ h3 span{
 }
 .about-container div{
     margin: 5% 5% 0 0;
-    width: 1000px;
+    /*width: 1000px;*/
 }
 .about-container div img{
     height: 100%;
@@ -184,11 +230,11 @@ h3 span{
     /*height: 80%;*/
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     padding: 80px 10%;
 }
 .journey-container div{
-    height: calc(100%/4);
+    height:100px/* calc(100%/4)*/;
     width: 100%;
     border: 2px solid white;
     padding: 2%;
@@ -526,7 +572,7 @@ form input, form textarea{
         font-size: 20px;
     }
 
-}++
+}
 
 @media (min-width: 768px)and (max-width: 1024px) {
     .home-container div h1 {
@@ -653,6 +699,7 @@ form input, form textarea{
         height: 60%;
         flex-direction: column;
     }
+
     .social-media-container {
         width: 100%;
         position: absolute;
@@ -735,6 +782,7 @@ form input, form textarea{
         height: 60%;
         flex-direction: column;
     }
+    
     .journey-container div p {
         font-size: 14px;
     }
