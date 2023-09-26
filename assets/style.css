@@ -60,7 +60,6 @@ section{
     align-items: center;
     padding: 30px 10% 0;
     color: #9A98A8;
-    display: flex;
 }
 .home-container{
     /* position: relative;*/
@@ -69,8 +68,9 @@ section{
 }
 .headings{
     position: absolute;
-    top: 12%;
+    top: 10%;
     left: 22%;
+    text-align: right;
 }
 .headings h1{
     font-size: 50px;
@@ -114,6 +114,7 @@ section{
     top: 40%;
     width: 200px;
     padding: 10px;
+    text-align: right;
 }
 .status{
     position: absolute;
@@ -158,7 +159,104 @@ section{
 .social-media a:hover{
     box-shadow: 0 0 10px #FF014F;
 }
+/*.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10% 0;
+}
+.home-container{
+    !* position: relative;*!
+    left: 10%;
+    top: 10%;
+}
+.headings{
+    position: absolute;
+    top: 12%;
+    left: 22%;
+}
+.headings h1{
+    font-size: 50px;
+    font-family: Quicksand, sans-serif;
+}
+.headings h1 span{
+    font-size: 50px;
+    font-family: Quicksand, sans-serif;
+    color: #FF014F;
+}
+.home-image{
+    width: 300px;
+    height: 370px;
+    background: #202337;
+    border-radius: 20px;
+}
+.home-image img{
+    top: 10%;
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+.shadow-border{
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    width: 300px;
+    height: 370px;
+    border: 2px solid #202337;
+    border-radius: 20px;
+}
+.home-container p{
+    position: absolute;
+    left: 22%;
+    top: 35%;
+    width: 200px;
+    padding: 10px;
+}
+.status{
+    position: absolute;
+    top: 60%;
+    left: 63%;
+    font-size: 30px;
+}
+.status h3{
+    font-family: Quicksand, sans-serif;
+}
+.status h3 span{
+    color: #8C6FFF;
+    font-family: Quicksand, sans-serif;
+}
+.line {
+    border: 2px solid #8C6FFF;
+    border-radius: 10px;
+    position: absolute;
+    top: 81%;
+    left: 63%;
+    width: 10%;
+}
+.social-media{
+    padding: 5% 0 ;
+    position: absolute;
+}
 
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FF014F;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.social-media a:hover{
+    box-shadow: 0 0 10px #FF014F;
+}*/
 main:nth-child(2)>section>a{
     font-size: 40px;
     position: fixed;
@@ -183,7 +281,7 @@ main:nth-child(2)>section>a{
 .topic-section{
     text-align: center;
     position: absolute;
-    top: 5%;
+    top: 25%;
     left: 40%;
 }
 h3{
