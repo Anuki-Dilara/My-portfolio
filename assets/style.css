@@ -238,7 +238,7 @@ h3 span{
     font-weight: bold;
     border-radius: 20px;
     position: absolute;
-    left: 35%;
+    left: 50%;
     top: 100%;
 }
 .journey{
@@ -298,6 +298,9 @@ h3 span{
     margin: 20px 10px;
 }
 /*====================================================services===========================================*/
+.services{
+
+}
 .services-list{
     margin: 0;
     padding: 0;
@@ -357,7 +360,7 @@ h3 span{
     z-index: 2;
 }
 .content-wrap i{
-    width: 80px;
+    width: 100px;
 }
 .content-wrap h4{
     margin-top: 8px;
@@ -378,7 +381,6 @@ h3 span{
     background-color: #FF014F;
 }
 
-
 /*======================================================projects===============================================*/
 .projects{
     padding: 60px 10%;
@@ -391,7 +393,6 @@ h3 span{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 30px;
     margin: 40px 10px;
-    padding: 0 10%;
 }
 .project-card{
     border: 2px solid #353250;
@@ -720,58 +721,6 @@ form input, form textarea{
         left: 0;
         right: 0;
     }
-    .services-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-gap: 10px;
-        margin: 10px 20px;
-    }
-    .services-list div {
-        padding: 20px;
-        font-size: 13px;
-        font-weight: 100;
-    }
-    .services-list div img {
-        font-size: 40px;
-        margin: 0 0 20px 0;
-    }
-    .services-list h4 {
-        font-size: 20px;
-        margin: 20px 0;
-    }
-    .projects-list div h4 {
-        font-size: 15px;
-    }
-    .projects a {
-        right: 50px;
-        bottom: 0px;
-        margin: auto;
-        position: absolute;
-        font-size: 30px;
-    }
-
-    .assignment-container div {
-        width: 40%;
-    }
-
-    .assignment-container div img {
-        width: 100%;
-    }
-    .assigment-layer img{
-        height: 10px;
-        width: 10px;
-    }
-    .social-media-container {
-        height: 70%;
-    }
-    .assigment-layer a {
-        width: 3rem;
-        height: 3rem;
-    }
-    .assigment-layer h4 {
-        font-size: 1.0rem;
-        opacity: 2;
-    }
 
     .message-section button {
         width: 40%;
@@ -874,7 +823,7 @@ form input, form textarea{
         padding: 2px;
     }
     .nav_bar a{
-        font-size: 10px;
+        font-size: 12px;
     }
     .shadow-border {
         top: 20%;
@@ -911,8 +860,28 @@ form input, form textarea{
         height: 300px;
     }
     .headings {
-        top: 1%;
-        padding: 26px;
+        text-align: left;
+        padding: 10px;
+    }
+    .headings h1 {
+        font-size: 30px;
+    }
+    .home-container p {
+        left: 30px;
+        top: 90%;
+        text-align: left;
+    }
+    .social-media {
+        padding: 3% 0;
+        top: 100%;
+        left: 40px;
+    }
+    .status {
+        top: 85%;
+    }
+    .line {
+        top: 108%;
+        left: 74%;
     }
     .status h3 {
         font-family: Quicksand, sans-serif;
