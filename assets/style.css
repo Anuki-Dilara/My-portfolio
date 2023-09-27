@@ -973,3 +973,23 @@ form input, form textarea{
         margin: 40px 20px;
     }
 }
+
+@media (max-width: 375px){
+    .nav_bar a{
+        font-size: 10px;
+    }
+    .shadow-border {
+        top: 27%;
+        left: 18%;
+        width: 76%;
+        height: 300px;
+    }
+    .shadow-topic h1{
+        font-size: 50px;
+    }
+    .skills-container img {
+        height: 60px;
+        width: 60px;
+        margin: 20px 8px;
+    }
+}
