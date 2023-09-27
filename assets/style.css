@@ -933,6 +933,9 @@ form input, form textarea{
     .journey-container div p {
         font-size: 14px;
     }
+    .project-card p{
+        font-size: 14px;
+    }
     .social-media-container {
         width: 100%;
         position: absolute;
