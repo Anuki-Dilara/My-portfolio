@@ -228,7 +228,7 @@ h3 span{
     justify-content: space-between;
     /*padding: 60px 12% ;*/
     height: 100%;
-    margin: -40px;
+    margin: -40px 0;
 }
 .about-container div{
     margin: 5% 5% 0 0;
