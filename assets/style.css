@@ -298,45 +298,85 @@ h3 span{
     margin: 20px 10px;
 }
 /*====================================================services===========================================*/
-.services{
-    padding: 60px 10%;
+.services-list{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 40px;
-    margin: 40px 20px;
+.service-card{
+    margin: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
-.services-list div{
-    background: #202337;
-    padding: 30px ;
-    font-size: 13px;
-    font-weight: 100;
-    border-radius: 20px ;
-    border: 1px solid #353250;
-    text-align: justify;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-
-}
-.services-list div i{
-    font-size: 40px;
-    margin: 0 0 20px 0;
-
-}
-.services-list h4{
-    font-size: 24px;
-    margin: 20px 0 ;
+.face-front,
+.face-back{
+    width: 300px;
+    min-height: 300px;
+    height: auto;
+    background-color: #181A2D;
     text-align: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: 0.7s cubic-bezier(0.4,0.2,0.2,1);
+    border: 2px solid #202337;
+    border-radius: 50px;
 }
-
-.services-list div p{
-    text-align: center;
+.face-front{
+    transform: rotateY(0deg);
 }
+.face-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+.face-front::after,
+.face-back::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
 
-.services-list div:hover{
+}
+.face-front .content-wrap,
+.face-back .content-wrap{
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    z-index: 2;
+}
+.content-wrap i{
+    width: 80px;
+}
+.content-wrap h4{
+    margin-top: 8px;
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+}
+.content-wrap p{
+    color: white;
+    line-height: 28px;
+    font-size: 16px;
+}
+.service-card:hover .face-front{
+    transform: rotateY(-180deg);
+}
+.service-card:hover .face-back{
+    transform: rotateY(0deg);
     background-color: #FF014F;
-    color: #ffffff;
 }
 
 
