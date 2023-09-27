@@ -173,7 +173,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 8px;
 }
 .shadow-topic h1{
     color:  #000712;
@@ -190,7 +190,7 @@ main {
 h3{
     font-size: 45px;
     font-weight: 750;
-    margin: 60px 0;
+    margin: 40px 0;
     font-family: Quicksand, sans-serif;
     color: white;
     position: absolute;
@@ -205,7 +205,7 @@ h3 span{
 /*=============================================================about===============================================*/
 .about{
     /*position: relative;*/
-    padding: 60px 10%;
+    padding: 50px 10%;
 }
 .about-container{
     position: relative;
@@ -301,7 +301,6 @@ h3 span{
 .services-list{
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     background-color: transparent;
     display: flex;
     align-items: center;
