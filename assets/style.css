@@ -810,29 +810,58 @@ form input, form textarea{
     .headings h1 {
         font-size: 30px;
     }
-    .home-container p {
+    /*.home-container p {
         left: 30px;
         top: 90%;
         text-align: left;
+    }*/
+    .home-container p {
+        left: 30px;
+        top: 93%;
+        text-align: left;
+        font-size: 14px;
     }
     .social-media {
         padding: 3% 0;
         top: 100%;
         left: 40px;
     }
-    .status {
+    /*.status {
         top: 82%;
-    }
-    .line {
+    }*/
+    /*.line {
         top: 108%;
         left: 74%;
-    }
-    .status h3 {
+    }*/
+    /*.status h3 {
         font-family: Quicksand, sans-serif;
         font-size: 20px;
-    }
+    }*/
     .status h3 span {
         font-size: 18px;
+    }
+    .status{
+        left: 40px;
+        top: 76%;
+    }
+    .status h3 {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    /*.status h3 span {
+        font-size: 15px;
+    }*/
+    .line {
+        top: 93%;
+        left: 13%;
+        width: 70px;
+    }
+    .social-media {
+        top: 102%;
+        left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .shadow-topic h1{
         font-size: 50px;
@@ -848,7 +877,7 @@ form input, form textarea{
         left: 0;
         top: 10%;
     }
-    .social-media a {
+    /*.social-media a {
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -859,7 +888,7 @@ form input, form textarea{
         text-decoration: none;
         margin: 10px;
         font-size: 15px;
-    }
+    }*/
     .about-container p {
         text-align: center;
         font-size: 12px;
