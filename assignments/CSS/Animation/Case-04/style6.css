@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+#background{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: url('assets/sky.jpg')center center no-repeat;
+    background-size: cover;
+}
+#city{
+    height: 250px;
+    width: 500%;
+    background-image: url("assets/city.png");
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    margin: auto;
+    animation: bg-move 5s ease-out infinite;
+}
+#road{
+    height: 300px;
+    width: 100%;
+    display: block;
+    background-image: url("assets/road.jpg");
+    position: absolute;
+    bottom: -300px;
+}
+#car{
+    height: 180px;
+    width: 480px;
+    background: url('assets/car.png')center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 500px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: car 5s linear infinite;
+}
+#front-wheel{
+    width: 90px;
+    aspect-ratio: 1/1;
+    background: url('assets/wheel.png')center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 280px;
+    right: 0;
+    margin: auto;
+    animation: wheel-spin 5s linear infinite;
+}
+#rear-wheel{
+    width: 90px;
+    aspect-ratio: 1/1;
+    background: url('assets/wheel.png')center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: -310px;
+    right: 0;
+    margin: auto;
+    animation: wheel-spin 5s linear infinite;
+}
+@keyframes wheel-spin {
+    0%{
+        transform: rotate(360deg);
+    }
+    35%{
+        transform: rotate(150deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes car {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes bg-move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-80%);
+    }
+}
