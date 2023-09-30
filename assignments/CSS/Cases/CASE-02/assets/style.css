@@ -47,26 +47,12 @@ main>div>h2 {
     font-family: Arial;
 }
 
-/*.images {*/
-/*    height: 300px;*/
-/*    position: relative;*/
-/*}*/
-
-/*.images>div {*/
-/*    width: 909px;*/
-/*    max-height: 300px;*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*}*/
-
 .images {
     height: 450px;
     position: relative;
 }
 .images>div {
-    background-image: url("img/giphy.gif");
+    background-image: url("img/catoon.gif");
     background-size: cover;
     background-position: center;
     border: 1px solid greenyellow;

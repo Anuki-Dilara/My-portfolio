@@ -233,18 +233,23 @@ h3 span{
 }
 .about-container div{
     margin: 5% 5% 0 0;
-    /*width: 1000px;*/
 }
 .about-container div img{
     height: 100%;
     width: 100%;
-    /*padding: 5% 0 0;*/
+}
+.about-container h3{
+    left: 44%;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
 }
 .about-container p{
     text-align: justify;
-    margin: 50px 0 0 0;
+    margin: 135px 0 0 0;
     width: 100%;
+    color: #9A98A8;
 }
+
 .about button {
     height: 50px;
     width: 140px;
@@ -254,17 +259,20 @@ h3 span{
     font-weight: bold;
     border-radius: 20px;
     position: absolute;
-    left: 43%;
-    top: 100%;
+    left: 44%;
+    top: 70%;
+}
+.about button:hover{
+    background: #FF014F;
 }
 .journey{
     /*height: 100vh;*/
     position: relative;
-    padding: 100px 0 0;
+    padding: 100px 10% 0;
 }
 .journey-topic{
     position: absolute;
-    left: 30px;
+    left: 80px;
     font-weight: 600;
     font-size: 32px;
 }
@@ -294,7 +302,7 @@ h3 span{
     font-weight: 600;
     font-size: 32px;
     position: absolute;
-    left: 30px;
+    left: 80px;
 }
 .skills-container {
     position: relative;
@@ -386,7 +394,7 @@ h3 span{
 .content-wrap h4{
     margin-top: 8px;
     color: white;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 40px;
 }
 .content-wrap p{
@@ -470,6 +478,11 @@ h3 span{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
+.assignment-card{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #353250;
+}
 
 .assignment-container .assignment-card{
     position: relative;
@@ -481,7 +494,10 @@ h3 span{
 
 .assignment-card img{
     width: 100%;
+    height: 250px;
     transition: 5s ease;
+    padding: 20px;
+    border-radius: 2.8rem;
 }
 .assignment-card:hover img{
     transform: scale(1.1);
@@ -810,11 +826,7 @@ form input, form textarea{
     .headings h1 {
         font-size: 30px;
     }
-    /*.home-container p {
-        left: 30px;
-        top: 90%;
-        text-align: left;
-    }*/
+
     .home-container p {
         left: 30px;
         top: 93%;
@@ -877,18 +889,12 @@ form input, form textarea{
         left: 0;
         top: 10%;
     }
-    /*.social-media a {
-        display: inline-flex;
+
+    .about-container {
         justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 2px solid #FF014F;
-        text-decoration: none;
-        margin: 10px;
-        font-size: 15px;
-    }*/
+        height: 60%;
+        flex-direction: column;
+    }
     .about-container p {
         text-align: center;
         font-size: 12px;
@@ -900,12 +906,6 @@ form input, form textarea{
         font-size: 12px;
         margin: 10px;
     }
-    .about-container {
-        justify-content: center;
-        height: 60%;
-        flex-direction: column;
-    }
-    
     .journey-container div p {
         font-size: 14px;
     }
