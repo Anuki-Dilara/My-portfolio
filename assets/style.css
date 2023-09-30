@@ -133,27 +133,28 @@ main {
 }
 .status{
     position: absolute;
-    top: 48%;
+    top: 60%;
     left: 63%;
+    width: 150px;
     /*display: flex;*/
 }
 .status h3{
     font-family: Quicksand, sans-serif;
     font-size: 40px;
+    margin: 0;
 }
 .status h3 span{
     color: #8C6FFF;
     font-family: Quicksand, sans-serif;
     font-size: 30px;
-
 }
 .line {
     border: 2px solid #8C6FFF;
     border-radius: 10px;
-    position: absolute;
-    top: 81%;
-    left: 63%;
-    width: 10%;
+    position: relative;
+    top: 60%;
+    width: 50%;
+    margin: 5px 0 0;
 }
 .social-media{
     padding: 3% 0;
@@ -239,6 +240,7 @@ h3 span{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    padding: 10px;
 }
 .article{
     width: 100%;
@@ -264,7 +266,7 @@ h3 span{
     width: 667px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
 }
 .about-description h2{
     font-weight: 600;
@@ -290,9 +292,9 @@ h3 span{
     text-align: left;
     font-weight: 500;
     top: 3px;
+    border: 2px solid #FF014F;
     border-radius: 25px;
-    background-color: #202337;
-    border-width: 0;
+    background-color:transparent;
     width: 150px;
     padding-left: 19px;
     /* left: 3px; */
@@ -717,10 +719,6 @@ form input, form textarea{
     .status {
         left: 68%;
     }
-    .line {
-        top: 88%;
-        left: 68%;
-    }
     .headings h1 span {
         font-size: 45px;
     }
@@ -777,10 +775,6 @@ form input, form textarea{
     .status {
         left: 74%;
     }
-    .line {
-        top: 88%;
-        left: 74%;
-    }
     .social-media a {
         width: 30px;
         height: 30px;
@@ -812,11 +806,6 @@ form input, form textarea{
 }
 
 @media (min-width: 400px)and (max-width: 700px){
-    .line {
-        top: 90%;
-        left: 10%;
-        width: 70px;
-    }
 }
 
 @media (max-width: 425px){
@@ -873,15 +862,15 @@ form input, form textarea{
 
     .home-container p {
         left: 30px;
-        top: 93%;
+        top: 100%;
         text-align: left;
         font-size: 14px;
     }
-    .social-media {
+    /*.social-media {
         padding: 3% 0;
         top: 100%;
         left: 40px;
-    }
+    }*/
     /*.status {
         top: 82%;
     }*/
@@ -893,12 +882,12 @@ form input, form textarea{
         font-family: Quicksand, sans-serif;
         font-size: 20px;
     }*/
-    .status h3 span {
-        font-size: 18px;
-    }
     .status{
         left: 40px;
-        top: 76%;
+        top: 92%;
+    }
+    .status h3 span {
+        font-size: 18px;
     }
     .status h3 {
         font-size: 15px;
@@ -907,42 +896,32 @@ form input, form textarea{
     /*.status h3 span {
         font-size: 15px;
     }*/
-    .line {
-        top: 93%;
-        left: 13%;
-        width: 70px;
-    }
-    .social-media {
+    /*.social-media {
         top: 102%;
         left: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    }*/
     .shadow-topic h1{
         font-size: 50px;
-
     }
     h3 {
         font-size: 30px;
         font-weight: 500;
     }
-
     .about-container {
         justify-content: center;
         height: 60%;
         flex-direction: column;
     }
+    .about-image {
+        width: 250px;
+        height: 300px;
+    }
     .about-container p {
         text-align: center;
         font-size: 12px;
-    }
-    .about button {
-        /*height: 40px;
-        width: 110px;
-        border: 3px solid #FF014F;
-        font-size: 12px;
-        margin: 10px;*/
     }
     .journey-container div p {
         font-size: 14px;
@@ -1020,13 +999,13 @@ form input, form textarea{
     }
     .home-container p {
         left: 30px;
-        top: 93%;
+        top: 102%;
         text-align: left;
         font-size: 14px;
     }
     .status{
         left: 40px;
-        top: 76%;
+        top: 94%;
     }
     .status h3 {
         font-size: 15px;
@@ -1035,18 +1014,13 @@ form input, form textarea{
     .status h3 span {
         font-size: 15px;
     }
-    .line {
-        top: 93%;
-        left: 13%;
-        width: 70px;
-    }
-    .social-media {
+    /*.social-media {
         top: 102%;
         left: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    }*/
     .shadow-topic h1{
         font-size: 40px;
     }
