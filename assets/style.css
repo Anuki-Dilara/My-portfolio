@@ -976,7 +976,17 @@ footer{
         text-align: left;
         font-size: 14px;
     }
-
+    .status {
+        left: 40px;
+        top: 92%;
+    }
+    .status h3 {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    .status h3 span {
+        font-size: 18px;
+    }
     .shadow-topic h1{
         font-size: 50px;
     }
