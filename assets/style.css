@@ -340,7 +340,7 @@ h3 span{
     width: 100%;
     border: 2px solid #353250;
     padding: 2%;
-    box-shadow: -23px -23px 15px black,black 2px 2px 10px;
+    box-shadow: black 0 0 20px;
     transition: 2s;
     border-radius: 25px;
 }
@@ -477,6 +477,7 @@ h3 span{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
+    padding: 40px;
 }
 
 .service-card{
@@ -494,8 +495,8 @@ h3 span{
 }
 
 .service-card:hover{
-    transform: scale(0.97);
-    transform-origin: top center;
+    transform: translateY(-10px);
+    border: 2px solid #FF014F;
 }
 
 .service-card h4{
@@ -514,6 +515,9 @@ h3 span{
     /*border: 2px solid #FF014F;*/
     padding: 10px;
     background: #FF014F;
+}
+.service-card:hover i{
+    box-shadow: #FF014F 0 0 10px;
 }
 
 
@@ -546,17 +550,18 @@ h3 span{
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: 0.7s cubic-bezier(0.4,0.2,0.2,1);
-    border: 2px solid #353250;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 .face-front{
     transform: rotateY(0deg);
+    border: 2px solid #353250;
 }
 .face-back{
     position: absolute;
     top: 0;
     left: 0;
     transform: rotateY(180deg);
+    border: 2px solid #000712;
 }
 .face-front::after,
 .face-back::after{
@@ -585,6 +590,8 @@ h3 span{
     height: 200px;
     width: 200px;
     border-radius: 25px;
+    border: 2px solid #000712;
+    padding: 5px;
 }
 
 .content-wrap h4{
@@ -592,6 +599,7 @@ h3 span{
     color: white;
     text-align: center;
 }
+
 .content-wrap p{
     color: white;
     font-size: 14px;
@@ -602,7 +610,7 @@ h3 span{
 }
 .project-card:hover .face-back{
     transform: rotateY(0deg);
-    background-color: #1B1D30;
+    background-color: #FF014F;
 }
 .more-arrow{
     right: 80px;
@@ -748,7 +756,7 @@ h3 span{
 }
 .detail-container{
     /*width: 50%;*/
-    background-color: #262626;
+    background-color: #1B1D30;
     gap: 30px;
     border-radius: 25px;
     position: relative;
@@ -779,7 +787,7 @@ h3 span{
     flex-direction: column;
     gap: 10px;
     border-radius: 25px;
-    background: #262626;
+    background: #1B1D30;
     width: 100%;
     font-size: 18px;
     padding: 10px;
@@ -797,16 +805,17 @@ h3 span{
     color: white;
     padding: 10px;
 }
+
+/*=================================================footer==========================================================*/
 footer{
     text-align: center;
     font-weight: bold;
-    background: #FF014F;
+    background: #1B1D30;
     padding: 10px 0;
 }
-/*=================================================footer==========================================================*/
-.footer{
-    position: relative;
-    top: revert;
+
+footer span{
+    color: #FF014F;
 }
 
 @media (max-width: 1440px){
