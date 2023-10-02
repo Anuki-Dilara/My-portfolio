@@ -812,6 +812,7 @@ footer{
     font-weight: bold;
     background: #1B1D30;
     padding: 10px 0;
+    opacity: 0.5;
 }
 
 footer span{
