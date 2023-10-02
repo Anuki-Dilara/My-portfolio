@@ -626,72 +626,73 @@ h3 span{
 .contact{
     position: relative;
 }
+.contact{
+    padding: 50px 2%;
+}
 .contact-container{
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
+    /*width: 100%;*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
 }
-.social-media-container{
-    height: 60%;
-    width: 20%;
-    background: #262626;
+.detail-container{
+    /*width: 50%;*/
+    background-color: #262626;
+    gap: 30px;
     border-radius: 25px;
-    position: absolute;
-    left: 10%;
-    top: 10%;
-}
-.social-media-container div{
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: calc(100%/3);
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
-
-.social-media-container div h5{
-    text-align: center;
-}
-.social-media-container div img{
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-}
-.message-section{
-    position: absolute;
-    left: 34%;
-    top: 10%;
-    width: 50%;
-}
-
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    /*margin: 25px 0px 2px 0px;*/
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+.detail-container div{
     display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
 }
-.message-section button{
-    height: 10%;
-    width: 30%;
-    color: white;
-    border: 4px solid #FF014F;
-    border-radius: 20px;
+.detail-container div img{
+    width: 40px;
+    height: 40px;
+}
+.contact-form{
+    /*width: 300px;*/
+    padding: 10px;
+}
+.contact-form form input, form textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 25px;
+    background: #262626;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border-style: none;
+    position: relative;
+}
+.contact-form form button{
+    border: 2px solid #FF014F;
+    border-radius: 25px;
     background: transparent;
-    position: absolute;
-    left: 70%;
+    width: 150px;
+    height: 10%;
+    position: relative;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+    background: #FF014F;
+    padding: 10px 0;
 }
 /*=================================================footer==========================================================*/
 .footer{
