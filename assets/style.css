@@ -361,6 +361,10 @@ h3 span{
     /*position: absolute;*/
     left: 80px;
 }
+.skills-sub-topic{
+    font-size: 20px;
+    color: #9A98A8;
+}
 .skills-container{
     display: flex;
     flex-direction: column;
@@ -378,7 +382,7 @@ h3 span{
     /*position: relative;
     left: 20px;
     top: 90%;*/
-    padding: 40px 5%;
+    padding: 40px;
     gap: 25px;
     /*height: 300px;
     width: 90%;*/
@@ -390,8 +394,11 @@ h3 span{
 .languages div:nth-child(2) img{
     height: 80px;
     width: 80px;
-    margin: 20px 20px;
+    margin: 20px 15px;
     transition: 1s;
+    border: 2px solid #8C6FFF;
+    border-radius: 25px;
+    padding: 10px;
 }
 .languages div:nth-child(2) img:hover {
     transform: scale(1.1);
@@ -404,14 +411,17 @@ h3 span{
     width: 100%;
 }
 .tools div:nth-child(2){
-    padding: 40px 5%;
+    padding: 40px;
     gap: 25px;
 }
 .tools div:nth-child(2) img{
     height: 80px;
     width: 80px;
-    margin: 20px 20px;
+    margin: 20px 15px;
     transition: 1s;
+    border: 2px solid #8C6FFF;
+    border-radius: 25px;
+    padding: 10px;
 }
 /*====================================================services===========================================*/
 /*
@@ -581,7 +591,7 @@ h3 span{
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: 0.7s cubic-bezier(0.4,0.2,0.2,1);
-    border-radius: 25px;
+    /*border-radius: 30px;*/
 }
 .face-front{
     transform: rotateY(0deg);
@@ -620,8 +630,8 @@ h3 span{
 .content-wrap img{
     height: 200px;
     width: 200px;
-    border-radius: 25px;
-    border: 2px solid #000712;
+    /*border-radius: 30px;*/
+    border: 2px solid #8C6FFF;
     padding: 5px;
 }
 
