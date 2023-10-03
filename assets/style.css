@@ -1096,7 +1096,9 @@ footer span{
         height: 30px;
         font-size: 30px;
     }
-
+    .column img:hover{
+        transform: scale(1.2);
+    }
     .message-section button {
         height: 8%;
         width: 50%;
