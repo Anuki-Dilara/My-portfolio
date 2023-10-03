@@ -361,6 +361,13 @@ h3 span{
     /*position: absolute;*/
     left: 80px;
 }
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .languages div:first-child{
     display: flex;
     align-items: center;
@@ -383,7 +390,7 @@ h3 span{
 .languages div:nth-child(2) img{
     height: 80px;
     width: 80px;
-    margin: 20px 10px;
+    margin: 20px 20px;
     transition: 1s;
 }
 .languages div:nth-child(2) img:hover {
@@ -403,7 +410,7 @@ h3 span{
 .tools div:nth-child(2) img{
     height: 80px;
     width: 80px;
-    margin: 20px 10px;
+    margin: 20px 20px;
     transition: 1s;
 }
 /*====================================================services===========================================*/
@@ -1154,7 +1161,7 @@ footer span{
         width: 250px;
     }
     .service-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     .service-card p {
         font-size: 12px;
