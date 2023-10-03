@@ -762,6 +762,7 @@ h3 span{
 /*==========================================================gallery===============================================*/
 .gallery{
     position: relative;
+    padding: 40px;
 }
 
 .gallery-container{
@@ -772,7 +773,6 @@ h3 span{
     align-items: center;
     margin: 0;
     padding: 60px 10%;
-
 }
 
 .column{
@@ -784,12 +784,17 @@ h3 span{
 }
 
 .column img{
-    border: 2px solid black;
+    border: 2px solid transparent;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 50%;
     border-radius: 10px;
+    transition: 1s;
+}
+
+.column img:hover{
+    transform: scale(1.1);
 }
 
 /*=========================================================contact==================================================*/
