@@ -357,30 +357,54 @@ h3 span{
 .skills-topic{
     font-weight: 600;
     font-size: 32px;
-    position: absolute;
+    padding: 20px 0;
+    /*position: absolute;*/
     left: 80px;
 }
-.skills-container {
-    position: relative;
-    left: 20px;
-    top: 90%;
-    padding: 40px 10%;
-    height: 400px;
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+.languages div:first-child{
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
-.skills-container img{
-    height: 100px;
-    width: 100px;
+.languages div:nth-child(2){
+    /*position: relative;
+    left: 20px;
+    top: 90%;*/
+    padding: 40px 5%;
+    gap: 25px;
+    /*height: 300px;
+    width: 90%;*/
+    /*gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.languages div:nth-child(2) img{
+    height: 80px;
+    width: 80px;
     margin: 20px 10px;
     transition: 1s;
 }
-.skills-container img:hover {
+.languages div:nth-child(2) img:hover {
     transform: scale(1.1);
     box-shadow: #353250 2px 2px 5px;
+}
+.tools div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.tools div:nth-child(2){
+    padding: 40px 5%;
+    gap: 25px;
+}
+.tools div:nth-child(2) img{
+    height: 80px;
+    width: 80px;
+    margin: 20px 10px;
+    transition: 1s;
 }
 /*====================================================services===========================================*/
 /*
@@ -604,6 +628,18 @@ h3 span{
     color: white;
     font-size: 14px;
     text-align: center;
+}
+.content-wrap a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 8%;
+    font-size: 30px;
+    text-decoration: none;
 }
 .project-card:hover .face-front{
     transform: rotateY(-180deg);
