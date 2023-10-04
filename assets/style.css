@@ -153,6 +153,7 @@ main {
     color: #8C6FFF;
     font-family: Quicksand, sans-serif;
     font-size: 30px;
+    white-space: nowrap;
 }
 .line {
     border: 2px solid #8C6FFF;
