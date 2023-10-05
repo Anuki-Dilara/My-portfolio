@@ -6,3 +6,9 @@ var typed = new Typed(".auto-typed",{
     backSped: 150,
     loop: true
 })
+var type = new Type(".auto-type",{
+    strings: ["Anuki Dilara","Anuki Dilara"],
+    typeSpeed: 150,
+    backSped: 150,
+    loop: true
+})

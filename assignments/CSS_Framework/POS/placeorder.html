@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/boostrap/css/bootstrap.min.css">
+
+</head>
+<body>
+<main class="container p-2 justify-content-center" style="width: 100%">
+    <section class="container d-md-inline-flex gap-3 p-5">
+        <section class="container border border-4 rounded-5 p-2" >
+            <h4 class="bg-primary border rounded-5 p-2">Invoice Details</h4>
+            <form class="p-2">
+                <div class="row p-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Order Id" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Date" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Customer" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Customer Id" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Salary" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="row-cols-6 p-2">
+                    <input type="text" class="form-control" placeholder="Address" aria-label="First name">
+                </div>
+            </form>
+        </section>
+
+        <section class="container border border-4 rounded-5 p-2">
+            <h4 class="bg-primary border rounded-5 p-2">Item Select</h4>
+            <form class="p-2">
+                <div class="row p-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Item" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Item Code" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Item Name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Price" aria-label="Last name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Qty. on hand" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="row-cols-6 p-2">
+                    <input type="text" class="form-control" placeholder="Ordered Quantity" aria-label="First name">
+                </div>
+                <button type="button" class="btn btn-danger m-2">Add Item</button>
+            </form>
+        </section>
+
+        <section class="container border border-4 rounded-5 p-2">
+            <div class="p-3">
+                <div class="col p-2">
+                    <div class="input-group">
+                        <span class="input-group-text">Total-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <div class="input-group">
+                        <span class="input-group-text">Sub Total-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+                <form class="p-2">
+                    <div class="row p-2">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Cash" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Discount" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <div class="row-cols-6 p-2">
+                        <input type="text" class="form-control" placeholder="Balance" aria-label="First name">
+                    </div>
+                    <button type="button" class="btn btn-info">Purchase</button>
+                </form>
+            </div>
+        </section>
+    </section>
+    <section>
+        <table class="table table-success table-striped m-2 table-dark">
+            <thead>
+            <tr>
+                <th scope="col">Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Soap</td>
+                <td>100.00</td>
+                <td>2</td>
+                <td>200.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+</body>
+</html>
