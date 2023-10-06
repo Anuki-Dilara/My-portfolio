@@ -14,7 +14,7 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-body-secondary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">POS System</a>
+            <a class="navbar-brand" href="#">AD POS System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,12 +42,14 @@
     </nav>
 </header>
 
-<section id="dashboard">
-    <div class="grid text-center d-inline-flex position-absolute">
+<section class="container d-md-inline-flex" id="dashboard">
+    <div class="col-xl-6 text-center">
         <div class="g-col-6 border border-4 border-primary-subtle rounded-5 m-5 bg-dark text-white fw-bold fs-4" style="width: 300px; height: 200px">Customers<label class="text-white"></label></div>
         <div class="g-col-6 border border-4 border-primary-subtle rounded-5 m-5 bg-dark text-white fw-bold fs-4" style="width: 300px; height: 200px">Items</div>
     </div>
-    <!--<img src="assets/images/pos-terminal-shop-ready-work.jpg" class="img-fluid " style="background-attachment: fixed; background-size: cover; background-position: center" alt="...">-->
+    <div class="col-xl-6 m-5 border rounded-5">
+        <img src="assets/images/pos-terminal-shop-ready-work.jpg" class="img-thumbnail border rounded-5" alt="...">
+    </div>
 </section>
 
 <!--------------------------------------------------------customer--------------------------------------->
@@ -149,8 +151,15 @@
                     </div>
                 </div>
                 <div class="row p-2">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Customer" aria-label="First name">
+                    <div class="col dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Customer
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </div>
                     <div class="col">
                         <input type="text" class="form-control" placeholder="Customer Id" aria-label="Last name">
@@ -174,8 +183,15 @@
             <h4 class="bg-primary border rounded-5 p-2">Item Select</h4>
             <form class="p-2">
                 <div class="row p-2">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Item" aria-label="First name">
+                    <div class="col dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            item
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </div>
                     <div class="col">
                         <input type="text" class="form-control" placeholder="Item Code" aria-label="Last name">
