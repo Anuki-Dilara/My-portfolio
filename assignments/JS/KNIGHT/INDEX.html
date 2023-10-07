@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assests/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assests/bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" href="../assests/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assests/bootstrap/js/bootstrap.min.js">
+    <title>Title</title>
+
+    <style>
+        body{
+            background: black;
+        }
+
+        .outer{
+            position: absolute;
+            width: 600px;
+            height: 100px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /*top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;*/
+            width: 100%;
+            height: 50px;
+        }
+
+        .div {
+            width: 80px;
+            height: 30px;
+            background-color: whitesmoke;
+            border: 1px solid black;
+        }
+
+        .speed-changer {
+            position: absolute;
+            padding: 10px;
+            display: flex;
+            top: 60%;
+            left: 50%;
+        }
+
+        .div2{
+            width: 40px;
+            height: 10px;
+            background: white;
+            display: flex;
+            border: 2px solid #0a53be;
+        }
+
+        button{
+            background: blue;
+            position: relative;
+            top: 40%
+        }
+
+        .hr{
+            width: 100%;
+            height: 2px;
+            background: white;
+        }
+
+        h2{
+            color: red;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="outer">
+    <h2>Java Script Knight Rider</h2>
+    <div class="hr"></div>
+    <div class="container">
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+    </div>
+    <div class="hr"></div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</div>
+
+
+<div class="speed-changer">
+    <div class="div2"></div>
+    <div class="div2"></div>
+    <div class="div2"></div>
+    <div class="div2"></div>
+    <div class="div2"></div>
+    <div class="div2"></div>
+    <div class="div2"></div>
+</div>
+
+<audio id="audio" src="assests/Knight%20Rider%20Sms%20!%20Knight%20Rider%20!%20Theme.mp3"></audio>
+
+<script src="assests/lib/jQuery/jquery-3.6.4.min.js"></script>
+
+<script>
+    var time;
+
+    var lightNumber = 0;
+    var direction= 'RIGHT';
+
+    var lights = $('.div');
+    console.log(lights);
+
+
+    function updateLights() {
+        $('.div').css({background: 'whitesmoke'});
+
+        lights[lightNumber].style.background = 'red';
+
+        if (lightNumber > 0) {
+            lights[lightNumber - 1].style.background = 'burlywood';
+        }
+
+        if (lightNumber < 6) {
+            lights[lightNumber + 1].style.background = 'pink';
+        }
+
+        if (lightNumber === 6) {
+            direction = 'LEFT';
+        }
+
+        if (direction === 'RIGHT') {
+            lightNumber++;
+        } else {
+            lightNumber--;
+        }
+
+        if (lightNumber === 0) {
+            direction = 'RIGHT';
+        }
+    }
+
+
+    document.getElementById("start").addEventListener('click',function () {
+        clearInterval(time);
+        time = setInterval(p,1300);
+    })
+
+
+    document.getElementById("stop").addEventListener('click',function () {
+        clearInterval(time);
+    })
+
+    $('#start').on('click', ()=>{
+        clearInterval(time);
+        $('#audio')[0].play();
+        time = setInterval(updateLights,50);
+    });
+
+    $('#stop').on('click', ()=>{
+        $('#audio')[0].pause();
+        clearInterval(time);
+    });
+
+
+</script>
+
+</body>
+</html>
