@@ -1,0 +1,47 @@
+.background{
+    background: url("tech-image.jpg");
+}
+.container{
+    padding: 10px;
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+}
+
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    background: white;
+    opacity: 0.5;
+}
+
+.buttons {
+    background: wheat;
+    opacity: 0.5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: black;
+}
+
+.buttons>div{
+    border: 5px solid;
+}
+
+.button{
+    line-height: 80px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#equal-button{
+    background-color: lightskyblue;
+}
+
+.button:hover{
+    background-color: mediumpurple;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
