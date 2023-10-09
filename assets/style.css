@@ -264,7 +264,7 @@ h3 span{
     transition: all 2s;
 }
 .about-image{
-    background: url(images/abou-image4.png)center center no-repeat;
+    background: url(images/img_1.png)center center no-repeat;
     background-size: 400px;
     width: 400px;
     height: 400px;
@@ -1074,7 +1074,7 @@ footer span{
         flex-direction: column;
     }
     .about-image {
-        width: 250px;
+        width: 300px;
         height: 300px;
     }
     .about-container p {
