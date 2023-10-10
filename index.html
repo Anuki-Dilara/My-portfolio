@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/normalize.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-    <script src="assets/js/js.js"></script>
+    <script src="assets/js/index.js"></script>
 
 </head>
 <body>
@@ -84,10 +84,16 @@
 
         <section class="details">
             <article class="article">
-                <!--My Photo-->
-
-                <div class="about-image">
-                    <!--My Photo-->
+                <div class="hero-image-container">
+                    <div class="about-image">
+                        <img src="assets/images/homeImage7.png"/>
+                    </div>
+                    <div class="rotate-text">
+                        <div class="text">
+                            <!--<p>I am front end developer And I am graphic designer</p>-->
+                        </div>
+                        <span><i></i></span>
+                    </div>
                 </div>
 
                 <section class="about-description">
@@ -389,7 +395,10 @@
         backSped: 150,
         loop: true
     })
-
+    let text = document.querySelector(".text p");
+    text.innerHTML = text.innerHTML.split("").map((char, i) =>
+        `<b style="transform:rotate(${i * 6.3}deg")>${char}</b>`
+    ).join("");
 </script>
 </body>
 </html>

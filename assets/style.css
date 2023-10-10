@@ -265,14 +265,87 @@ h3 span{
     margin-right: 25px;
     transition: all 2s;
 }
+.hero-image-container{
+    position: relative;
+}
 .about-image{
-    background: url(images/homeImage7.png)center center no-repeat;
     background-size: 400px;
-    width: 400px;
-    height: 400px;
+    width: 340px;
+    height: 350px;
     margin-bottom: 69px;
     border-radius: 50%;
+    position: relative;
+    background-color: #FF014F;
+    box-shadow: #FF014F 0 0 10px;
 }
+.about-image img{
+    position: relative;
+    width: 400px;
+    z-index: 10;
+}
+/*
+
+.rotate-text {
+    position: absolute;
+    top: 4%;
+    !* left: -53px; *!
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.rotate-text span{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: red;
+    border: 6px solid wheat;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.rotate-text span::before{
+    content: "";
+    position: absolute;
+    inset: 20px;
+    background: #FF014F;
+    border-radius: 50%;
+    z-index: 1;
+}
+.rotate-text span i{
+    position: absolute;
+    inset: 0;
+    background: -webkit-linear-gradient(90deg, hsla(94, 100%, 70%, 1) 0%, hsla(0, 100%, 77%, 1) 100%);
+    filter: blur(5px);
+    animation: animate 2s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+         }
+}
+.rotate-text .text{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: white;
+    border-radius: 50%;
+}
+.text b{
+    position: absolute;
+    transform-origin: 0 247px;
+    display: block;
+    top: 0;
+    left: 50%;
+}
+*/
+
+
 .about-description{
     width: 667px;
     display: flex;
@@ -1076,8 +1149,11 @@ footer span{
         flex-direction: column;
     }
     .about-image {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+    }
+    .about-image img{
+        width: 300px;
     }
     .article {
         gap: 0;
