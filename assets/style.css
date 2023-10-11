@@ -284,6 +284,7 @@ h3 span{
     margin-top: 20px;
     padding: 10px;
 }
+
 .article{
     width: 100%;
     display: flex;
@@ -375,7 +376,6 @@ h3 span{
 }
 */
 
-
 .about-description{
     width: 667px;
     display: flex;
@@ -384,11 +384,37 @@ h3 span{
 }
 .about-description h2{
     font-weight: 600;
-    font-size: 32px;
+    font-size: 40px;
     /* line-height: 52px; */
     margin-top: 0;
     margin-bottom: 8px;
     text-align: center;
+}
+.about-details-heading{
+    position: relative;
+    color: white;
+    width: 600px;
+    overflow: hidden;
+}
+.about-details-heading h2:before{
+    content: "";
+    position: absolute;
+    /*top: 0;*/
+    left: 10%;
+    height: 100%;
+    width: 100%;
+    background-color: #000712;
+    border-left: 4px solid white;
+    animation: about-detail-anima 4s steps(12) infinite;
+}
+
+@keyframes about-detail-anima {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
 }
 .about-description p{
     font-size: 16px;
@@ -1204,6 +1230,13 @@ footer span{
     .article {
         gap: 0;
     }
+    .about-description h2{
+        font-weight: 600;
+        font-size: 28px;
+    }
+    .about-details-heading{
+        width: 400px;
+    }
     .about-container p {
         text-align: center;
         font-size: 12px;
@@ -1272,6 +1305,13 @@ footer span{
         height: 60px;
         width: 60px;
         margin: 20px 8px;
+    }
+    .about-description h2{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .about-details-heading{
+        width: 300px;
     }
 }
 
