@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="assets/normalize.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-    <script src="assets/js/index.js"></script>
-
 </head>
 <body>
 
@@ -63,9 +61,11 @@
                 </a>
             </div>
             <div class="status">
-                <h3>I am a<br><span class="auto-typed"></span>
+                <div class="status-container">
+                    <span class="text first-text">I am<br></span>
+                    <span class="text sec-text">Front-End Developer</span>
                     <div class="line"></div>
-                </h3>
+                </div>
             </div>
 
         </div>
@@ -387,18 +387,7 @@
     <footer>Copyright © 2023 <span>Anuki</span> | All Rights Reserved</footer>
 </main>
 
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script>
-    var typed = new Typed(".auto-typed",{
-        strings: ["Front-End Developer","Graphic Designer"],
-        typeSpeed: 150,
-        backSped: 150,
-        loop: true
-    })
-    let text = document.querySelector(".text p");
-    text.innerHTML = text.innerHTML.split("").map((char, i) =>
-        `<b style="transform:rotate(${i * 6.3}deg")>${char}</b>`
-    ).join("");
-</script>
+<script src="index.js"></script>
+
 </body>
 </html>

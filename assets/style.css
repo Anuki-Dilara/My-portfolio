@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -142,26 +143,55 @@ main {
     position: absolute;
     top: 60%;
     left: 63%;
-    width: 150px;
+    width: 350px;
+    overflow: hidden;
     /*display: flex;*/
 }
-.status h3{
-    font-family: Quicksand, sans-serif;
-    font-size: 40px;
-    margin: 0;
+.status-container{
+    /*width: 500px;*/
+    overflow: hidden;
 }
-.status h3 span{
+.status .text{
+    position: relative;
+    color: #8C6FFF;
+    font-size: 30px;
+    font-family: Quicksand;
+}
+.status .text.first-text{
+    color: white;
+}
+.status .text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000712;
+    border-left: 4px solid #8C6FFF;
+    animation: status-anima 4s steps(12) infinite;
+}
+@keyframes status-anima {
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+/*.status h3 span{
     color: #8C6FFF;
     font-family: Quicksand, sans-serif;
-    font-size: 30px;
     white-space: nowrap;
-}
+    font-size: 40px;
+    margin: 0;
+}*/
 .line {
     border: 2px solid #8C6FFF;
     border-radius: 10px;
     position: relative;
     top: 60%;
-    width: 50%;
+    width: 30%;
     margin: 5px 0 0;
 }
 .social-media{
@@ -1032,7 +1062,14 @@ footer span{
         top: 40%;
     }
     .status {
-        left: 74%;
+        top: 70%;
+        left: 72%;
+    }
+    .status .text{
+        font-size: 20px;
+    }
+    .line{
+        width: 20%;
     }
     .social-media a {
         width: 30px;
@@ -1129,13 +1166,22 @@ footer span{
         left: 40px;
         top: 92%;
     }
-    .status h3 {
+
+    .status .text{
+        font-size: 18px;
+    }
+
+    .line {
+        width: 20%;
+    }
+    /*.status h3 {
         font-size: 15px;
         white-space: nowrap;
     }
+
     .status h3 span {
         font-size: 18px;
-    }
+    }*/
     .shadow-topic h1{
         font-size: 50px;
     }
