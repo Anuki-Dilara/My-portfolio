@@ -396,7 +396,7 @@ h3 span{
     width: 600px;
     overflow: hidden;
 }
-.about-details-heading h2:before{
+.about-details-heading span:before{
     content: "";
     position: absolute;
     /*top: 0;*/
@@ -421,7 +421,7 @@ h3 span{
     font-family: poppins, sans-serif;
     color: #9A98A8;
     margin-top: 2px;
-    text-align: center;
+    text-align: justify;
 }
 .about-description p:last-of-type{
     margin-bottom: 20px;
