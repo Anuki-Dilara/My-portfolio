@@ -17,14 +17,14 @@ div {
 section>div:first-child {
     grid-column: 1/3;
     background-color: deepskyblue;
-    background: url("images/image2.jpg");
+    background: url("../CASE-05/images/image2.jpg");
     background-size: cover;
     background-position: center;
 }
 
 section>div:nth-child(2){
     background-color: red;
-    background: url("images/image4.jpg");
+    background: url("../CASE-05/images/image4.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -32,38 +32,38 @@ section>div:nth-child(3){
     grid-column: 4/5;
     grid-row: 1/4;
     background-color: seagreen;
-    background: url("images/image1.jpg");
+    background: url("../CASE-05/images/image5.jpg");
     background-size: cover;
     background-position: center;
 }
 section>div:nth-child(4){
     background-color: indigo;
-    background: url("images/image5.jpg");
+    background: url("../CASE-05/images/image7.jpg");
     background-size: cover;
     background-position: center;
 }
 section>div:nth-child(5){
     background-color: coral;
-    background: url("images/image6.jpg");
+    background: url("../CASE-05/images/image10.jpg");
     background-size: cover;
     background-position: center;
 }
 section>div:nth-child(6){
     background-color: cornflowerblue;
-    background: url("images/image7.jpg");
+    background: url("../CASE-05/images/image6.jpg");
     background-size: cover;
     background-position: center;
 }
 section>div:nth-child(7){
     background-color: orange;
-    background: url("images/image1.jpg");
+    background: url("../CASE-05/images/image1.jpg");
     background-size: cover;
     background-position: center;
 }
 section>div:nth-child(8){
     grid-column: 2/4;
     background-color: crimson;
-    background: url("images/image8.jpg");
+    background: url("../CASE-05/images/image4.jpg");
     background-size: cover;
     background-position: center;
 }
