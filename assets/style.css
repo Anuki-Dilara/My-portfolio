@@ -224,7 +224,7 @@ main {
     text-decoration: none;
     margin: 10px;
     font-size: 20px;
-    transition: 1s;
+    transition: 0.5s;
     color: #FF014F;
 }
 
@@ -232,7 +232,7 @@ main {
     box-shadow: 0 0 20px #FF014F;
     transform: translateY(-5px);
     background: #FF014F;
-    color: white;
+    color: #000712;
 }
 
 .up-arrow{
