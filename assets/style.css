@@ -26,19 +26,27 @@ body{
     right: 0;
     left: 0;
     display: flex;
-    padding: 30px 10%;
+    padding: 40px 10%;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     background: #000712;
-    height: 40px;
+    height: 50px;
     opacity: 0.9;
 }
 .nav_bar{
     position: absolute;
     right: 130px;
-    top: 10px;
+    top: 15px;
 }
+
+.logo{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
 .nav_bar li{
     display: inline-block;
     padding: 15px;
@@ -217,11 +225,14 @@ main {
     margin: 10px;
     font-size: 20px;
     transition: 1s;
+    color: #FF014F;
 }
 
 .social-media a:hover{
     box-shadow: 0 0 20px #FF014F;
     transform: translateY(-5px);
+    background: #FF014F;
+    color: white;
 }
 
 .up-arrow{
