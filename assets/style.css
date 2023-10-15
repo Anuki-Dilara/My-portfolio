@@ -528,9 +528,10 @@ h3 span{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    border: 2px solid var(--main-color);
+   /* border: 2px solid var(--main-color);*/
+    box-shadow: black 0 0 20px;
     border-radius: 25px;
-    padding: 30px;
+    padding: 40px;
 }
 
 .skill-row .skill-column{
