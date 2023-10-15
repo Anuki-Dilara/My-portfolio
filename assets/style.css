@@ -532,6 +532,11 @@ h3 span{
     box-shadow: black 0 0 20px;
     border-radius: 25px;
     padding: 40px;
+    transition: 2s;
+}
+
+.skills .skill-row:hover{
+    transform: scale(0.97);
 }
 
 .skill-row .skill-column{
