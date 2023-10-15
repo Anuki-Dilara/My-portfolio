@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
-
+:root{
+    --main-color: #00abf0;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -36,7 +38,7 @@ body{
 }
 .nav_bar{
     position: absolute;
-    right: 130px;
+    right: 110px;
     top: 15px;
 }
 
@@ -55,12 +57,12 @@ body{
 }
 .nav_bar a{
     text-decoration: none;
-    color: #FF014F;
+    color: white;
     font-size: 18px;
 }
 
 .nav_bar a:hover{
-    color: #9A98A8;
+    color: var(--main-color);
 }
 
 main {
@@ -110,7 +112,7 @@ main {
 .headings h1 span{
     font-size: 50px;
     font-family: Quicksand, sans-serif;
-    color: #FF014F;
+    color: var(--main-color);
 }
 .home-image{
     width: 300px;
@@ -151,7 +153,7 @@ main {
     position: absolute;
     top: 60%;
     left: 63%;
-    width: 350px;
+    /*width: 350px;*/
     overflow: hidden;
     /*display: flex;*/
 }
@@ -220,18 +222,18 @@ main {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid #FF014F;
+    border: 2px solid var(--main-color);
     text-decoration: none;
     margin: 10px;
     font-size: 20px;
     transition: 0.5s;
-    color: #FF014F;
+    color: var(--main-color);
 }
 
 .social-media a:hover{
-    box-shadow: 0 0 20px #FF014F;
+    box-shadow: 0 0 20px var(--main-color);
     transform: translateY(-5px);
-    background: #FF014F;
+    background: var(--main-color);
     color: #000712;
 }
 
@@ -275,7 +277,7 @@ h3{
     position: absolute;
 }
 h3 span{
-    color: #FF014F;
+    color: var(--main-color);
     font-family: Quicksand, sans-serif;
 }
 
@@ -284,7 +286,7 @@ h3 span{
 .about{
     /*position: relative;*/
     width: 100%;
-    /*padding: 50px 10%;*/
+    /*padding: 10px 5%;*/
 }
 
 .details{
@@ -312,17 +314,17 @@ h3 span{
 }
 .about-image{
     background-size: 400px;
-    width: 340px;
-    height: 350px;
+    width: 300px;
+    height: 310px;
     margin-bottom: 69px;
     border-radius: 50%;
     position: relative;
-    background-color: #FF014F;
-    box-shadow: #FF014F 0 0 10px;
+    background-color: var(--main-color);
+    box-shadow: var(--main-color) 0 0 10px;
 }
 .about-image img{
     position: relative;
-    width: 400px;
+    width: 350px;
     z-index: 10;
 }
 /*
@@ -443,7 +445,7 @@ h3 span{
     text-align: left;
     font-weight: 500;
     top: 3px;
-    border: 2px solid #FF014F;
+    border: 2px solid var(--main-color);
     border-radius: 25px;
     background-color:transparent;
     width: 150px;
@@ -458,7 +460,7 @@ h3 span{
 }
 .about-description button:hover{
     transform: scale(1.1);
-    background: #FF014F;
+    background: var(--main-color);
 }
 .journey{
     /*height: 100vh;*/
@@ -493,12 +495,21 @@ h3 span{
     transform: scale(0.97);
 }
 .journey-container div h5{
-    color: #FF014F;
+    color: var(--main-color);
     font-size: 16px;
 }
 .journey-container div p{
     font-size: 18px;
 }
+
+/*=============================================================skills===============================================*/
+
+.skills{
+    min-height: auto;
+    background: transparent;
+    padding: 40px 10%;
+}
+
 .skills-topic{
     font-weight: 600;
     font-size: 32px;
@@ -506,66 +517,145 @@ h3 span{
     /*position: absolute;*/
     left: 80px;
 }
+
 .skills-sub-topic{
     font-size: 20px;
     color: #9A98A8;
 }
-.skills-container{
+
+.skills .skill-row{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border: 2px solid var(--main-color);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.skill-row .skill-column{
+    flex: 1 1 20rem;
+}
+
+.skill-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.skill-box .skill-content{
+    position: relative;
+    /*border: .2rem solid #000000;*/
+    border-radius: .6rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.skill-box .skill-row:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #353250;
+    z-index: -1;
+    transition: .5s;
+}
+
+.skill-box .skill-row:hover:before{
     width: 100%;
 }
-.languages div:first-child{
+.skill-content .progress{
+    padding: 1rem 0;
+}
+
+.skill-content .progress h2{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-content .progress h2 span{
+    color: #00eeff;
+}
+
+.skill-content .progress .bar{
+    height: 1.5rem;
+    border-radius: .6rem;
+    /*border: .2rem solid black;*/
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.skill-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: 3rem;
+    background-color: #00eeff;
+}
+
+#html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+         width: 90%;
+     }
+}
+
+#css{
+    width: 80%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+         width: 80%;
+     }
+}
+
+#java{
+    width: 50%;
+    animation: java 2s;
+}
+@keyframes java {
+    0%{
+        width: 0%;
+    }100%{
+         width: 50%;
+     }
+}
+
+#js{
+    width: 60%;
+    animation: js 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+         width: 60%;
+     }
+}
+.tools div{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-}
-.languages div:nth-child(2){
-    /*position: relative;
-    left: 20px;
-    top: 90%;*/
-    padding: 40px;
+    padding: 20px;
     gap: 25px;
-    /*height: 300px;
-    width: 90%;*/
-    /*gap: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;*/
 }
-.languages div:nth-child(2) img{
+
+.tools div img{
     height: 80px;
     width: 80px;
     margin: 20px 15px;
     transition: 1s;
-    border: 1px solid #353250;
-    border-radius: 25px;
-    padding: 10px;
-}
-.languages div:nth-child(2) img:hover {
-    transform: scale(1.1);
-    box-shadow: #353250 2px 2px 5px;
-}
-.tools div:first-child{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.tools div:nth-child(2){
-    padding: 40px;
-    gap: 25px;
-}
-.tools div:nth-child(2) img{
-    height: 80px;
-    width: 80px;
-    margin: 20px 15px;
-    transition: 1s;
-    border: 1px solid #353250;
-    border-radius: 25px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
     padding: 10px;
 }
 /*====================================================services===========================================*/
@@ -685,7 +775,7 @@ h3 span{
 
 .service-card:hover{
     transform: translateY(-10px);
-    border: 2px solid #FF014F;
+    border: 2px solid var(--main-color);
 }
 
 .service-card h4{
@@ -703,10 +793,10 @@ h3 span{
     border-radius: 50%;
     /*border: 2px solid #FF014F;*/
     padding: 10px;
-    background: #FF014F;
+    background: var(--main-color);
 }
 .service-card:hover i{
-    box-shadow: #FF014F 0 0 10px;
+    box-shadow: var(--main-color) 0 0 10px;
 }
 
 
@@ -811,7 +901,7 @@ h3 span{
 }
 .project-card:hover .face-back{
     transform: rotateY(0deg);
-    background-color: #FF014F;
+    background-color: var(--main-color);
 }
 .more-arrow{
     right: 80px;
@@ -1001,7 +1091,7 @@ h3 span{
     position: relative;
 }
 .contact-form form button{
-    border: 2px solid #FF014F;
+    border: 2px solid var(--main-color);
     border-radius: 25px;
     background: transparent;
     width: 150px;
@@ -1022,7 +1112,7 @@ footer{
 }
 
 footer span{
-    color: #FF014F;
+    color: var(--main-color);
 }
 
 @media (max-width: 1440px){
@@ -1129,7 +1219,7 @@ footer span{
 
     .message-section button {
         width: 40%;
-        border: 3px solid #FF014F;
+        border: 3px solid var(--main-color);
         left: 60%;
     }
     .social-media-container div h5 {
@@ -1168,7 +1258,7 @@ footer span{
     .headings h1 span{
         font-size: 32px;
         font-family: Quicksand, sans-serif;
-        color: #FF014F;
+        color: var(--main-color);
     }
     .home-container {
         left: 10%;
@@ -1279,7 +1369,7 @@ footer span{
     .message-section button {
         height: 8%;
         width: 50%;
-        border: 4px solid #FF014F;
+        border: 4px solid var(--main-color);
         left: 50%;
         font-size: 12px;
     }
