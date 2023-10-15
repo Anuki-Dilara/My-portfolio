@@ -463,46 +463,99 @@ h3 span{
     transform: scale(1.1);
     background: var(--main-color);
 }
+
+/*=============================================================about===============================================*/
 .journey{
-    /*height: 100vh;*/
-    position: relative;
-    padding: 50px 10% 0;
+    padding: 60px 10%;
 }
+
 .journey-topic{
-    position: absolute;
-    left: 80px;
+    position: relative;
+    /*left: 80px;*/
     font-weight: 600;
     font-size: 32px;
 }
-.journey-container-box{
-}
-.journey-container{
-    /*height: 80%;*/
+
+.education{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 40px;
-    padding: 80px 10%;
-}
-.journey-container div{
-    height:100px/* calc(100%/4)*/;
-    width: 100%;
-    border: 2px solid #353250;
-    padding: 2%;
-    box-shadow: black 0 0 20px;
-    transition: 2s;
-    border-radius: 25px;
-}
-.journey-container div:hover{
-    transform: scale(0.97);
-}
-.journey-container div h5{
-    color: var(--main-color);
-    font-size: 16px;
-}
-.journey-container div p{
-    font-size: 18px;
+    min-height: auto;
+    padding: 20px 0;
 }
 
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.education-row .education-column{
+    flex: 1 1 20px;
+}
+
+.education-column .title{
+    font-size: 16px;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.education-column .education-box{
+    border-left: .2rem solid var(--main-color);
+}
+
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-box .education-content:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+}
+
+.education-content .content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #202337;
+    z-index: -1;
+    transition: .5s;
+}
+
+.education-content .content:hover::before{
+    width: 100%;
+}
+
+.education-content .content .year{
+    padding-right: .5rem;
+}
+
+.education-content .content h2{
+    font-size: 20px;
+}
+
+.education-content .content p{
+    font-size: 16px;
+    padding-top: .5rem;
+}
 /*=============================================================skills===============================================*/
 
 .skills{
@@ -527,8 +580,7 @@ h3 span{
 .skills .skill-row{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-   /* border: 2px solid var(--main-color);*/
+    gap: 1rem;
     box-shadow: black 0 0 20px;
     border-radius: 25px;
     padding: 40px;
@@ -550,27 +602,11 @@ h3 span{
 
 .skill-box .skill-content{
     position: relative;
-    /*border: .2rem solid #000000;*/
     border-radius: .6rem;
     overflow: hidden;
     z-index: 1;
 }
 
-.skill-box .skill-row:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #353250;
-    z-index: -1;
-    transition: .5s;
-}
-
-.skill-box .skill-row:hover:before{
-    width: 100%;
-}
 .skill-content .progress{
     padding: 1rem 0;
 }
@@ -588,7 +624,7 @@ h3 span{
 .skill-content .progress .bar{
     height: 1.5rem;
     border-radius: .6rem;
-    /*border: .2rem solid black;*/
+    border: .2rem solid black;
     padding: .5rem;
     margin: 1rem 0;
 }
