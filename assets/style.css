@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
 :root{
-    --main-color: #00abf0;
+    --main-color: #FF014F;
 }
 html{
     scroll-behavior: smooth;
@@ -18,6 +18,7 @@ html{
 body{
     background: #000712;
     color: white;
+    /*background: #FF014F;*/
     /*background: #181A2D;*/
     /*color: #9A98A8;*/
 }
@@ -63,6 +64,7 @@ body{
 
 .nav_bar a:hover{
     color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
 }
 
 main {
@@ -163,7 +165,7 @@ main {
 }
 .status .text{
     position: relative;
-    color: #8C6FFF;
+    color: var(--main-color);
     font-size: 30px;
     font-family: Quicksand;
 }
@@ -178,7 +180,7 @@ main {
     height: 100%;
     width: 100%;
     background-color: #000712;
-    border-left: 4px solid #8C6FFF;
+    border-left: 4px solid var(--main-color);
     animation: status-anima 4s steps(12) infinite;
 }
 @keyframes status-anima {
@@ -197,7 +199,7 @@ main {
     margin: 0;
 }*/
 .line {
-    border: 2px solid #8C6FFF;
+    border: 2px solid var(--main-color);
     border-radius: 10px;
     position: relative;
     top: 60%;
@@ -535,7 +537,8 @@ h3 span{
     left: 0;
     width: 0;
     height: 100%;
-    background: #202337;
+    background: var(--main-color);
+    opacity: 0.1;
     z-index: -1;
     transition: .5s;
 }
@@ -556,6 +559,7 @@ h3 span{
     font-size: 16px;
     padding-top: .5rem;
 }
+
 /*=============================================================skills===============================================*/
 
 .skills{
@@ -625,7 +629,7 @@ h3 span{
     height: 1.5rem;
     border-radius: .6rem;
     border: .2rem solid black;
-    padding: .5rem;
+    padding: .4rem;
     margin: 1rem 0;
 }
 
@@ -660,6 +664,18 @@ h3 span{
      }
 }
 
+#mysql{
+    width: 80%;
+    animation: mysql 2s;
+}
+@keyframes mysql {
+    0%{
+        width: 0%;
+    }100%{
+         width: 80%;
+     }
+}
+
 #java{
     width: 50%;
     animation: java 2s;
@@ -683,21 +699,56 @@ h3 span{
          width: 60%;
      }
 }
-.tools div{
+
+#python{
+    width: 60%;
+    animation: python 2s;
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }100%{
+         width: 60%;
+     }
+}
+
+.tools{
+    min-height: auto;
+    background: transparent;
+    padding: 40px 10%;
+}
+
+.tool-container{
+    box-shadow: 0 0 20px black;
+    border-radius: 25px;
     display: flex;
+    /*display: grid;*/
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 20px;
-    gap: 25px;
+    gap: 15px;
+}
+
+.tool-container .progress{
+    height: 100px;
+    width: 100px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    position: relative;
 }
 
 .tools div img{
-    height: 80px;
-    width: 80px;
-    margin: 20px 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    /*margin: 20px 15px;*/
     transition: 1s;
-    border: 1px solid var(--main-color);
     border-radius: 50%;
     padding: 10px;
 }
@@ -1076,6 +1127,8 @@ h3 span{
 
 .column img:hover{
     transform: scale(1.1);
+    border: 1px solid black;
+    box-shadow: 0 0 20px black;
 }
 
 /*=========================================================contact==================================================*/
@@ -1116,6 +1169,10 @@ h3 span{
 .detail-container div img{
     width: 40px;
     height: 40px;
+}
+.detail-container div i{
+    font-size: 40px;
+    color: var(--main-color);
 }
 .contact-form{
     /*width: 300px;*/
