@@ -525,7 +525,7 @@ h3 span{
 .education-content .content{
     position: relative;
     padding: 1.5rem;
-    border: .2rem solid var(--main-color);
+    border: .2rem solid #9A98A8;
     border-radius: .6rem;
     margin-bottom: 2rem;
 }
@@ -537,7 +537,7 @@ h3 span{
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--main-color);
+    background: #9A98A8;
     opacity: 0.1;
     z-index: -1;
     transition: .5s;
