@@ -17,6 +17,8 @@ html{
 }
 
 #preloader{
+    background: url("images/check-loader-gif.gif") no-repeat center center;
+    background-size: cover;
     background: black;
     height: 100vh;
     width: 100%;
