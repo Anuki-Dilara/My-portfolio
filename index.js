@@ -3,6 +3,7 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load",function (){
     loader.style.display = "none";
 })
+
 /*scroll section*/
 let sections = document.querySelectorAll('section');
 let section = document.querySelectorAll('header nav a');
