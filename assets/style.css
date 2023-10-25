@@ -1343,7 +1343,7 @@ footer span{
     .nav_bar a{
         display: block;
         font-size: 18px;
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
         transform: translateX(-20rem);
         transition: .25s ease;
         transition-delay: 0s;
@@ -1463,6 +1463,13 @@ footer span{
 
     .status .text{
         font-size: 18px;
+    }
+    .social-media a {
+        width: 35px;
+        height: 35px;
+    }
+    .social-media {
+            top: 519px;
     }
 
     .line {
@@ -1637,6 +1644,13 @@ footer span{
     }
     .shadow-topic h1{
         font-size: 40px;
+    }
+    .social-media {
+        top: 533px;
+    }
+    .social-media a {
+        width: 27px;
+        height: 30px;
     }
     .about-content h2 {
         font-size: 22px;
