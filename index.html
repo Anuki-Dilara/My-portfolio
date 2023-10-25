@@ -13,26 +13,30 @@
     <link rel="stylesheet" href="assets/normalize.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
 </head>
-<body>
 
 <header class="header">
     <a href="#" class="logo">Portfolio<span class="cyan">.</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
     <nav class="nav_bar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#assignments">Assignments</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a HREF="#contact">Contact</a></li>
-        </ul>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#gallery">Gallery</a>
+        <a HREF="#contact">Contact</a>
+
+        <span class="active-nav"></span>
     </nav>
 </header>
+<hr>
+<!--<div id="preloader">
 
+</div>-->
 <main>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-container">
             <div class="shadow-border"></div>
             <div class="headings">
@@ -43,7 +47,7 @@
             </p>
 
             <div class="home-image">
-                <img src="assets/images/homeImage2.png" alt="anuki dilara" >
+                <img src="assets/images/homeImage2-.png" alt="anuki dilara" >
             </div>
 
             <div class="social-media">
@@ -73,52 +77,39 @@
 
         </div>
         <div class="up-arrow">
-            <a href="index.html"><i class="fa-solid fa-circle-up" style="color: #FF014F;"></i></a>
+            <a href="#home"><i class="fa-solid fa-circle-up"></i></a>
         </div>
-
     </section>
 
-
-    <section class="about">
+    <section class="about" id="about">
         <div class="shadow-topic">
             <h1>About</h1>
-            <h3 class="topic-section" id="about">About<span>&nbsp;Me</span></h3>
+            <h3 class="topic-section">About<span>&nbsp;Me</span></h3>
         </div>
 
-        <section class="details">
-            <article class="article">
-                <div class="hero-image-container">
-                    <div class="about-image">
-                        <img src="assets/images/homeImage7.png"/>
-                    </div>
-                    <div class="rotate-text">
-                        <div class="text">
-                            <!--<p>I am front end developer And I am graphic designer</p>-->
-                        </div>
-                        <span><i></i></span>
-                    </div>
+        <div class="about-img">
+            <img src="assets/images/homeImage7.png" alt=""/>
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <div class="about-heading">
+                <div class="about-details-heading">
+                    <h2>Hi There,<span>I'm Anuki Dilara</span></h2>
                 </div>
+            </div>
 
-                <section class="about-description">
-                    <!-- My Details -->
-                    <div class="about-details-heading">
-                        <h2>Hi There,<span>I'm Anuki Dilara</span></h2>
-                    </div>
-                    <p>I am tyring to be a UI/UX designer.I’m currently studying Graduate Diploma in Software Engineering (GDSE) in Institute of Software Engineering (IJSE). I,m currently working on Web Designing.
-                        And I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
+            <p>I am tyring to be a UI/UX designer.I’m currently studying Graduate Diploma in Software Engineering (GDSE) in Institute of Software Engineering (IJSE). I,m currently working on Web Designing.
+                And I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
 
-                    <p>I would be pleased to serve organizations ready to utilize my skills, creative energy, and
-                        initiative. It is extremely rewarding and it's more enjoyable when I'm coding also I am willing
-                        to learn new technologies and apply them to solve complex problems.</p>
+            <p>I would be pleased to serve organizations ready to utilize my skills, creative energy, and
+                initiative. It is extremely rewarding and it's more enjoyable when I'm coding also I am willing
+                to learn new technologies and apply them to solve complex problems.</p>
 
-                    <button>Download CV
-                        <a href="assets/CV/test.txt" target="_blank">
-                            <i class="fa-solid fa-download" style="color: white"></i>
-                        </a>
-                    </button>
-                </section>
-            </article>
-        </section>
+            <div class="btn-box btns">
+                <a href="" class="about-btn">Download CV</a>
+            </div>
+        </div>
 
     </section>
 
@@ -175,137 +166,171 @@
         </div>
     </section>
 
-           <!-- <div class="skills-container">
-                <div class="tools">
-                    <div><h4 class="skills-sub-topic">Tools</h4></div>
-                    <div>
-                        <img src="assets/images/skills/intelij-logo.png" height="512" width="512"/>
-                        <img src="assets/images/skills/figma-logo.png" height="370" width="675"/>
-                        <img src="assets/images/skills/netbeans-logo.png" height="512" width="444"/>
-                        <img src="assets/images/skills/SceneBuilderLogo.webp" height="781" width="781"/>
-                    </div>
-                </div>
-            </div>-->
-
     <section class="skill-tool">
-        <div class="skill-tool-container"></div>
-        <div class="skills" id="skills">
-            <h4 class="skills-topic">Skills</h4>
-            <div><h4 class="skills-sub-topic">Languages</h4></div>
-            <div class="skill-row">
-                <div class="skill-column">
-                    <div class="skill-box">
-                        <div class="skill-content">
-                            <div class="progress">
-                                <h2>HTML <span>90%</span></h2>
-                                <div class="bar"><span id="html"></span></div>
-                            </div>
-                            <div class="progress">
-                                <h2>CSS <span>80%</span></h2>
-                                <div class="bar"><span id="css"></span></div>
-                            </div>
-                            <div class="progress">
-                                <h2>MySQL <span>80%</span></h2>
-                                <div class="bar"><span id="mysql"></span></div>
+        <div class="skill-tool-container">
+            <div class="shadow-topic">
+                <h1>Skills</h1>
+                <h3 class="topic-section">My<span>&nbsp;Skills</span></h3>
+            </div>
+            <div class="skills" id="skills">
+                <div class="skills-sub-topic-div"><div class="skills-sub-topic-line"></div><h4 class="skills-sub-topic">Languages</h4><div class="skills-sub-topic-line"></div></div>
+                <div class="skill-row">
+                    <div class="skill-column">
+                        <div class="skill-box">
+                            <div class="skill-content">
+                                <div class="progress">
+                                    <h2>HTML <span>90%</span></h2>
+                                    <div class="bar"><span id="html"></span></div>
+                                </div>
+                                <div class="progress">
+                                    <h2>CSS <span>80%</span></h2>
+                                    <div class="bar"><span id="css"></span></div>
+                                </div>
+                                <div class="progress">
+                                    <h2>MySQL <span>80%</span></h2>
+                                    <div class="bar"><span id="mysql"></span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="skill-column">
-                    <div class="skill-box">
-                        <div class="skill-content">
-                            <div class="progress">
-                                <h2>Java <span>50%</span></h2>
-                                <div class="bar"><span id="java"></span></div>
-                            </div>
-                            <div class="progress">
-                                <h2>Java Script <span>60%</span></h2>
-                                <div class="bar"><span id="js"></span></div>
-                            </div>
-                            <div class="progress">
-                                <h2>Python <span>60%</span></h2>
-                                <div class="bar"><span id="python"></span></div>
+                    <div class="skill-column">
+                        <div class="skill-box">
+                            <div class="skill-content">
+                                <div class="progress">
+                                    <h2>Java <span>50%</span></h2>
+                                    <div class="bar"><span id="java"></span></div>
+                                </div>
+                                <div class="progress">
+                                    <h2>Java Script <span>60%</span></h2>
+                                    <div class="bar"><span id="js"></span></div>
+                                </div>
+                                <div class="progress">
+                                    <h2>Python <span>60%</span></h2>
+                                    <div class="bar"><span id="python"></span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="tools">
-            <div><h4 class="skills-sub-topic">Tools</h4></div>
-            <div class="tool-container">
-                <div class="progress">
-                    <img src="assets/images/skills/intelij-logo.png"/>
+            <div class="tools">
+                <div class="skills-sub-topic-div">
+                    <div class="skills-sub-topic-line"></div>
+                    <h4 class="skills-sub-topic">Tools</h4>
+                    <div class="skills-sub-topic-line"></div>
                 </div>
-                <div class="progress">
-                    <img src="assets/images/skills/figma-logo.png"/>
-                </div>
-                <div class="progress">
-                    <img src="assets/images/skills/netbeans-logo.png"/>
-                </div>
-                <div class="progress">
-                    <img src="assets/images/skills/SceneBuilderLogo.webp"/>
+                <div class="tool-container">
+                    <div class="tool" id="intelij">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">
+                                    65%
+                                    <img src="assets/images/skills/intelij-logo.png" height="40" width="40"/></div>
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="tool" id="net-beans">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">
+                                    65%
+                                    <img src="assets/images/skills/netbeans-logo.png" height="40" width="40"/></div>
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="tool" id="scene-builder">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">
+                                    85%
+                                    <img src="assets/images/skills/SceneBuilderLogo.webp" height="40" width="40"/></div>
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="tool" id="figma">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">
+                                    80%
+                                    <img src="assets/images/skills/figma-logo.png" height="40" width="40"/></div>
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="shadow-topic">
             <h1>Services</h1>
-            <h3 class="topic-section" id="services">My<span>&nbsp;Services</span></h3>
+            <h3 class="topic-section">My <span>Services</span></h3>
         </div>
-        <div class="service-container">
+        <div class="services-list">
             <div class="service-card">
-                <i class='bx bx-crop' ></i>
-                <h4>UI/UX Design</h4>
-                <p>Connect with your users, Not just your Business.</p>
-            </div>
-            <div class="service-card">
-                <i class='bx bx-code-alt'></i>
-                <h4>Web Development</h4>
-                <p> Web develop the visual identity of your business.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-desktop" style="color: #ffffff;"></i>
-                <h4>Graphic Design</h4>
-                <p>Connect with your users, Not just your Business.</p>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="projects">
-        <div class="shadow-topic">
-            <h1>Projects</h1>
-            <h3 class="topic-section" id="projects">My<span>&nbsp;Projects</span></h3>
-        </div>
-        <div class="project-list">
-            <div class="project-card">
                 <div class="face-front">
                     <div class="content-wrap">
-                        <img src="assets/images/GST%20CAM%20939-10.jpg">
+                        <i class='bx bx-crop' ></i>
                         <!-- <i class="fa-solid fa-desktop" style="color: #ffffff;"></i>-->
-                        <h4>Pharmacy Management System</h4>
+                        <h4>UI/UX Design</h4>
+                        <p>Connect with your users, Not just your Business</p>
                     </div>
                 </div>
                 <div class="face-back">
                     <div class="content-wrap">
-                        <h4>Pharmacy Management System</h4>
-                        <p>Pharmacy Management System for Sithara Pharmacy</p>
-                        <a href="https://github.com/Anuki-Dilara/pharmacy-management-system-using-mvc-architechture" target="_blank">
-                            <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
-                        </a>
+                        <h4>UI/UX Design</h4>
+                        <p>Connect with your users, Not just your Business</p>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="service-card">
                 <div class="face-front">
                     <div class="content-wrap">
-                        <img src="assets/images/Ag1_09.jpg">
-                        <h4>Connect four Game</h4>
+                        <i class='bx bx-code-alt'></i>
+                        <h4>Web Development</h4>
+                        <p> Web develop the visual identity of your business.</p>
                     </div>
 
                 </div>
@@ -313,41 +338,123 @@
                     <div class="content-wrap">
                         <h4>Development</h4>
                         <p>Web develop the visual identity of your business</p>
-                        <a href="assignments/CSS/CSS/CASE-05/index.html" target="_blank">
-                            <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
-                        </a>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="service-card">
                 <div class="face-front">
                     <div class="content-wrap">
-                        <img src="assets/images/hostelProject-img.jpeg">
-                        <h4>Hostel Management System</h4>
+                        <i class="fa-solid fa-desktop" style="color: #ffffff;"></i>
+                        <h4>Graphic Design</h4>
+                        <p>Connect with your users, Not just your Business.</p>
                     </div>
                 </div>
                 <div class="face-back">
                     <div class="content-wrap">
-                        <h4>Hostel Management System</h4>
-                        <p>Hostel Management System for D24 hostel by Using Hibernate</p>
-                        <a href="https://github.com/Anuki-Dilara/d24-Hostel-Management-System-Using-Hibernate" target="_blank">
-                            <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
-                        </a>
+                        <h4>Web Design</h4>
+                        <p>Connect with your users, Not just your Business</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="more-arrow">
-            <a href="projects.html">
-                <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
-            </a>
-        </div>
     </section>
 
-    <section class="assignments">
+    <section class="portfolio" id="portfolio">
+        <div class="shadow-topic">
+            <h1>Portfolio</h1>
+            <h3 class="topic-section">My <span>Portfolio</span></h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="filter-buttons">
+                    <ul id="filter-btns">
+                        <li class="active" data-target="all">All</li>
+                        <li data-target="java">Java</li>
+                        <li data-target="web">Web</li>
+                        <li data-target="design">Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="portfolio-gallery">
+
+                    <div class="item" data-id="java">
+                        <div class="inner">
+                            <img src="assets/images/projects/Ag1_09.jpg" alt="portfolio"/>
+                            <div class="project-layer">
+                                <h4>Connect Four Game</h4>
+                                <a href="assignments/CSS/CSS/CASE-01/index.html" target="_blank">
+                                    <i class='bx bx-plus' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="java">
+                        <div class="inner">
+                            <img src="assets/images/projects/GST%20CAM%20939-10.jpg" alt="portfolio"/>
+                            <div class="project-layer">
+                                <h4>Pharmacy Management System</h4>
+                                <a href="https://github.com/Anuki-Dilara/pharmacy-management-system-using-mvc-architechture" target="_blank">
+                                    <i class='bx bx-plus' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="java">
+                        <div class="inner">
+                            <img src="assets/images/projects/hostelProject-img.jpeg" alt="portfolio"/>
+                            <div class="project-layer">
+                                <h4>Hostel Management System</h4>
+                                <a href="https://github.com/Anuki-Dilara/d24-Hostel-Management-System-Using-Hibernate" target="_blank">
+                                    <i class='bx bx-plus' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="java">
+                        <div class="inner">
+                            <img src="assets/images/projects/chat-04.jpg" alt="portfolio"/>
+                            <div class="project-layer">
+                                <h4>Chat App</h4>
+                                <a href="https://github.com/Anuki-Dilara/Flower-Group-Caht-Using-Socket-Programming" target="_blank">
+                                    <i class='bx bx-plus' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="assets/images/projects/portfolioProject.webp" alt="portfolio"/>
+                            <div class="project-layer">
+                                <h4>My Portfolio</h4>
+                                <a href="https://github.com/Anuki-Dilara/My-portfolio" target="_blank">
+                                    <i class='bx bx-plus' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="design">
+                        <div class="inner">
+                            <img src="assets/images/projects/Ag1_09.jpg" alt="portfolio"/>
+                            <div class="project-layer">
+                                <h4>Assignment 1</h4>
+                                <a href="assignments/CSS/CSS/CASE-01/index.html" target="_blank">
+                                    <i class='bx bx-plus' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="assignments" id="assignments">
         <div class="shadow-topic">
             <h1>Assignments</h1>
-            <h3 class="topic-section" id="assignments">My<span>&nbsp;Assignments</span></h3>
+            <h3 class="topic-section">My<span>&nbsp;Assignments</span></h3>
         </div>
         <div class="assignment-container">
             <div class="assignment-card">
@@ -411,10 +518,10 @@
     </section>
 
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="shadow-topic">
             <h1>Memories</h1>
-            <h3 class="topic-section" id="gallery">My<span>&nbsp;Gallery</span></h3>
+            <h3 class="topic-section">My<span>&nbsp;Gallery</span></h3>
         </div>
         <div class="gallery-container">
             <div class="column">
@@ -436,10 +543,10 @@
     </section>
 
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="shadow-topic">
             <h1>Contact</h1>
-            <h3 class="topic-section" id="contact">Contact<span>&nbsp;Me</span></h3>
+            <h3 class="topic-section">Contact<span>&nbsp;Me</span></h3>
         </div>
 
         <section class="contact-container">
@@ -460,9 +567,9 @@
         </section>
     </section>
     <footer>Copyright © 2023 <span>Anuki</span> | All Rights Reserved</footer>
+
+    <script src="index.js"></script>
+
 </main>
-
-<script src="index.js"></script>
-
 </body>
 </html>
