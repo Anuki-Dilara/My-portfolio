@@ -541,6 +541,34 @@ h3 span{
     padding:  0 0 100px;
 }
 
+.bubbles{
+    position: relative;
+    display: flex;
+}
+
+.bubbles span{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: var(--main-color);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px var(--main-color),
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
+    animation: bubble-anima 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+    z-index: -200;
+    opacity: 0.2;
+}
+@keyframes bubble-anima{
+    0%{
+        transform: translateY(140vh) scale(0);
+    }
+    100%{
+        transform: translateY(-0120vh) scale(0.5);
+    }
+}
 .skills{
     min-height: auto;
     background: transparent;
@@ -583,6 +611,7 @@ h3 span{
     border-radius: 25px;
     padding: 40px;
     transition: 2s;
+    z-index: 1;
 }
 
 .skills .skill-row:hover{
