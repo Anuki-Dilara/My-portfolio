@@ -14,29 +14,31 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
-<header class="header">
-    <a href="#" class="logo">Portfolio<span class="cyan">.</span></a>
-    <div class="bx bx-menu" id="menu-icon"></div>
-    <nav class="nav_bar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Projects</a>
-        <a href="#assignments">Assignments</a>
-        <a href="#gallery">Gallery</a>
-        <a HREF="#contact">Contact</a>
-
-        <span class="active-nav"></span>
-    </nav>
-</header>
 <hr>
 <div id="preloader">
     <img src="assets/images/loader.gif" height="100" width="100"/></div>
-<main>
-    <section class="home" id="home">
+
+<main class="app">
+
+    <header class="header" data-aos="fade-down">
+        <a href="#" class="logo">Portfolio<span class="cyan">.</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="nav_bar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#assignments">Assignments</a>
+            <a href="#gallery">Gallery</a>
+            <a HREF="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+        </nav>
+    </header>
+    <section class="home" id="home" data-scene>
         <div class="home-container">
             <div class="shadow-border"></div>
             <div class="headings">
@@ -46,7 +48,7 @@
                 I am trying to be a front end developer.
             </p>
 
-            <div class="home-image">
+            <div class="home-image" data-aos="flip-right">
                 <img src="assets/images/homeImage2-.png" alt="anuki dilara" >
             </div>
 
@@ -81,18 +83,18 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" id="about" data-scene>
         <div class="shadow-topic">
             <h1>About</h1>
             <h3 class="topic-section">About<span>&nbsp;Me</span></h3>
         </div>
 
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-out">
             <img src="assets/images/homeImage7.png" alt=""/>
             <span class="circle-spin"></span>
         </div>
 
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-up">
             <div class="about-heading">
                 <div class="about-details-heading">
                     <h2>Hi There,<span>I'm Anuki Dilara</span></h2>
@@ -113,7 +115,7 @@
 
     </section>
 
-    <section class="journey">
+    <section class="journey" data-scene>
         <h4 class="journey-topic">Education</h4>
         <div class="education">
             <div class="education-row">
@@ -122,7 +124,7 @@
                     <div class="education-box">
 
                         <div class="education-content">
-                            <div class="content">
+                            <div class="content" data-aos="fade-left">
                                 <div class="year"><i class='bx bxs-calendar'></i>2006-2012</div>
                                 <h2>1-5 Grade- MR/Rathanajothi Vidyalaya</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam atque fugit in laudantium nesciunt perspiciatis porro quos similique? Autem consequuntur debitis facere laudantium quisquam saepe sit voluptas voluptatibus.</p>
@@ -130,7 +132,7 @@
                         </div>
 
                         <div class="education-content">
-                            <div class="content">
+                            <div class="content" data-aos="fade-left" data-aos-delay="10">
                                 <div class="year"><i class='bx bxs-calendar'></i>2006-2012</div>
                                 <h2>1-5 Grade- MR/Rathanajothi Vidyalaya</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam atque fugit in laudantium nesciunt perspiciatis porro quos similique? Autem consequuntur debitis facere laudantium quisquam saepe sit voluptas voluptatibus.</p>
@@ -138,7 +140,7 @@
                         </div>
 
                         <div class="education-content">
-                            <div class="content">
+                            <div class="content" data-aos="fade-left" data-aos-delay="20">
                                 <div class="year"><i class='bx bxs-calendar'></i>2006-2012</div>
                                 <h2>G.C.E Ordinary Level - Mahinda Rajapaksha Vidyalaya Matara</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam atque fugit in laudantium nesciunt perspiciatis porro quos similique? Autem consequuntur debitis facere laudantium quisquam saepe sit voluptas voluptatibus.</p>
@@ -146,7 +148,7 @@
                         </div>
 
                         <div class="education-content">
-                            <div class="content">
+                            <div class="content" data-aos="fade-left" data-aos-delay="30">
                                 <div class="year"><i class='bx bxs-calendar'></i>2006-2012</div>
                                 <h2>G.C.E Advanced Level - Mahinda Rajapaksha Vidyalaya Matara</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam atque fugit in laudantium nesciunt perspiciatis porro quos similique? Autem consequuntur debitis facere laudantium quisquam saepe sit voluptas voluptatibus.</p>
@@ -154,7 +156,7 @@
                         </div>
 
                         <div class="education-content">
-                            <div class="content">
+                            <div class="content" data-aos="fade-left" data-aos-delay="40">
                                 <div class="year"><i class='bx bxs-calendar'></i>2006-2012</div>
                                 <h2>Graduated Diploma in IJSE</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam atque fugit in laudantium nesciunt perspiciatis porro quos similique? Autem consequuntur debitis facere laudantium quisquam saepe sit voluptas voluptatibus.</p>
@@ -166,7 +168,7 @@
         </div>
     </section>
 
-    <section class="skill-tool">
+    <section class="skill-tool" data-scene>
         <div class="skill-tool-container">
             <div class="shadow-topic">
                 <h1>Skills</h1>
@@ -377,7 +379,7 @@
         </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="services" id="services" data-scene>
         <div class="shadow-topic">
             <h1>Services</h1>
             <h3 class="topic-section">My <span>Services</span></h3>
@@ -433,7 +435,7 @@
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio" data-scene>
         <div class="shadow-topic">
             <h1>Portfolio</h1>
             <h3 class="topic-section">My <span>Portfolio</span></h3>
@@ -525,7 +527,7 @@
 
     </section>
 
-    <section class="assignments" id="assignments">
+    <section class="assignments" id="assignments" data-scene>
         <div class="shadow-topic">
             <h1>Assignments</h1>
             <h3 class="topic-section">My<span>&nbsp;Assignments</span></h3>
@@ -592,7 +594,7 @@
     </section>
 
 
-    <section class="gallery" id="gallery">
+    <section class="gallery" id="gallery" data-scene>
         <div class="shadow-topic">
             <h1>Memories</h1>
             <h3 class="topic-section">My<span>&nbsp;Gallery</span></h3>
@@ -618,7 +620,7 @@
     </section>
 
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-scene>
         <div class="shadow-topic">
             <h1>Contact</h1>
             <h3 class="topic-section">Contact<span>&nbsp;Me</span></h3>
@@ -641,8 +643,10 @@
             </div>
         </section>
     </section>
-    <footer>Copyright © 2023 <span>Anuki</span> | All Rights Reserved</footer>
+    <footer data-scene>Copyright © 2023 <span>Anuki</span> | All Rights Reserved</footer>
 
+    <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         /*preloader*/
         var loader = document.getElementById("preloader");
@@ -713,6 +717,9 @@
         }
 
 
+        AOS.init({
+            duration: 1500
+        });
     </script>
 
 </main>
