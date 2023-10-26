@@ -16,6 +16,17 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    border: 2px solid var(--main-color);
+}
+
 #preloader{
     background: var(--bg-color);
     background-size: cover;
