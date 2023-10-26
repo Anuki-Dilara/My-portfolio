@@ -3,238 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <title>assignments</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            outline: none;
-            border: none;
-            box-sizing: border-box;
-            font-family: Poppins, sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body{
-            background: #000712;
-            color: white;
-        }
-
-        .topic-section{
-            text-align: center;
-        }
-        h3{
-            font-size: 45px;
-            font-weight: 750;
-            margin: 40px 0;
-            font-family: Quicksand, sans-serif;
-        }
-        h3 span{
-            color: #00abf0;
-            font-family: Quicksand, sans-serif;
-        }
-
-        .assignments{
-            padding: 5px 5%;
-        }
-        .assignment-container{
-            height: 100%;
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 20px;
-        }
-
-        .assignment-container .assignment-card{
-            position: relative;
-            border-radius: 2rem;
-            box-shadow: 0 0 1rem black;
-            overflow: hidden;
-            display: flex;
-        }
-
-        .assignment-card img{
-            width: 100%;
-            transition: 5s ease;
-        }
-        .assignment-card:hover img{
-            transform: scale(1.1);
-        }
-
-        .assignment-card .assigment-layer{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #000712;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            -ms-flex-align: center;
-            padding: 0 4rem;
-            transform: translateY(100%);
-            transition: .5s ease;
-            opacity: 0.8;
-        }
-        .assignment-card:hover .assigment-layer{
-            transform: translateY(0);
-        }
-
-        .assigment-layer h4{
-           font-size: 1.5rem;
-            opacity: 2;
-        }
-
-        .assigment-layer a{
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 4rem;
-            height: 4rem;
-            border-radius: 50%;
-            border: 2px solid white;
-            margin: 10%;
-        }
-        .assigment-layer a img{
-            width: 30px;
-            height: 30px;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 </head>
 <body>
 
 
 <main>
     <section class="assignments">
-        <h3 class="topic-section" id="assignments">My <span>Assignments</span></h3>
-        <div class="assignment-container">
-
+        <h3 class="topic-section" id="assignments" style="position: absolute; right: 0; left: 0; margin: auto;">My <span>Assignments</span></h3>
+        <div class="assignment-container" style="margin-top: 20px;">
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment7-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 7</h4>
                     <a href="assignments/CSS/Transition/Case_01/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment8-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 8</h4>
                     <a href="assignments/CSS/Transition/Case_02/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment9-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 9</h4>
                     <a href="assignments/CSS/Transition/Case_03/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment10-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 10</h4>
                     <a href="assignments/CSS/Transition/Case_04/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/animation-case-1.gif"/>
                 <div class="assigment-layer">
                     <h4>Assignment 11</h4>
                     <a href="assignments/CSS/Animation/Case-01/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/animation-case-2.gif"/>
                 <div class="assigment-layer">
                     <h4>Assignment 12</h4>
                     <a href="assignments/CSS/Animation/Case-02/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment13-img.gif"/>
                 <div class="assigment-layer">
                     <h4>Assignment 13</h4>
                     <a href="assignments/CSS/Animation/Case-03/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment14-img.gif"/>
                 <div class="assigment-layer">
                     <h4>Assignment 14</h4>
                     <a href="assignments/CSS/Animation/Case-04" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment15-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 15</h4>
                     <a href="assignments/JS/QUE/Case-01/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment16-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 16</h4>
                     <a href="assignments/JS/QUE/Case-02/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment17-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 17</h4>
                     <a href="assignments/JS/SPA/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment18-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 18</h4>
                     <a href="assignments/JS/KNIGHT/INDEX.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment19-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 19</h4>
                     <a href="assignments/JS/CAL/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
             <div class="assignment-card">
-                <img src="assets/images/assignment-image.png"/>
+                <img src="assets/images/assigment-img/Assignment17-img.png"/>
                 <div class="assigment-layer">
                     <h4>Assignment 20</h4>
                     <a href="assignments/JS/InMemoryPOS/index.html" target="_blank">
-                        <img src="assets/images/icons/expand-arrows.png">
+                        <i class="fa-solid fa-circle-arrow-right" style="color: white;"></i>
                     </a>
                 </div>
             </div>
