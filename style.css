@@ -308,9 +308,9 @@ h3 span{
     gap: 10px;
     background: transparent;
     padding: 10px 5%;
-    /*background: url(assets/images/bg.jpeg);
+    background: url(assets/images/about-bg1.webp);
     background-size: cover;
-    background-position: center;*/
+    background-position: center;
 }
 
 .about-img{
@@ -321,9 +321,9 @@ h3 span{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(assets/images/Free-Vect.jpeg);
+    /*background: url(assets/images/Free-Vect.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
 }
 
 .about-img img{
