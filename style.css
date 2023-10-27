@@ -56,7 +56,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: transparent;
+    background: var(--bg-color);
     transition: .3s;
 }
 .header.sticky{
@@ -308,7 +308,7 @@ h3 span{
     gap: 10px;
     background: transparent;
     padding: 10px 5%;
-    background: url(assets/images/dark-5u7v1sbwoi6hdzsb.jpg);
+    background: url(assets/images/digital-art-3d-blue-light-dark-wallpaper-preview.jpg);
     background-size: cover;
     background-position: center;
 }
