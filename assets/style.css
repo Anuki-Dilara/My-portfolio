@@ -218,7 +218,7 @@ hr{
     width: 30%;
     margin: 5px 0 0;
 }
-.social-media{
+.home-container .social-media{
     padding: 3% 0;
     position: absolute;
     left: 0;
@@ -1214,7 +1214,17 @@ svg{
     padding: 10px;
     transition: 1s;
 }
-
+.contact-col .social-media {
+    padding-top: 60px;
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    /* margin: auto; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+}
 .contact-form form button:hover{
     background: var(--main-color);
     color: var(--bg-color);
@@ -1514,11 +1524,11 @@ footer span{
     .status .text{
         font-size: 18px;
     }
-    .social-media a {
+    .home-container .social-media a {
         width: 35px;
         height: 35px;
     }
-    .social-media {
+    .home-container .social-media {
             top: 519px;
     }
 
