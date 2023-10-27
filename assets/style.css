@@ -14,6 +14,7 @@ html{
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
+    /*overflow: hidden;*/
 }
 
 ::-webkit-scrollbar{
@@ -393,7 +394,7 @@ h3 span{
     margin: 15px;
 }
 
-.about-content .btn-box.btns {
+.btn-box.btns {
     position: relative;
     text-align: center;
     font-weight: 500;
@@ -408,14 +409,14 @@ h3 span{
     box-shadow: black 2px 2px 10px;
 }
 
-.about-content .btn-box.btns a{
+.btn-box.btns a{
     text-decoration: none;
     color: white;
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
-.about-content .btn-box.btns::before{
+.btn-box.btns::before{
     content: "";
     position: absolute;
     width: 0;
@@ -427,7 +428,7 @@ h3 span{
     z-index: -1;
     border-radius: 13px;
 }
-.about-content .btn-box.btns:hover::before{
+.btn-box.btns:hover::before{
     width: 100%;
     /*transform: scale(1.1);
     background: var(--main-color);*/
@@ -1008,11 +1009,25 @@ svg{
 }
 
 .assignments a{
-    right: 100px;
+    right: 150px;
     bottom: 0px;
     margin: auto;
     position: absolute;
-    font-size: 40px;
+    width: 120px;
+    height: 40px;
+    border: 2px solid var(--main-color);
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: 1s;
+}
+.assignments a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
 }
 .assignment-container{
     height: 100%;
@@ -1188,7 +1203,7 @@ svg{
 }
 .contact-form form button{
     border: 2px solid var(--main-color);
-    border-radius: 25px;
+    border-radius: 15px;
     background: transparent;
     width: 150px;
     height: 10%;
@@ -1196,8 +1211,13 @@ svg{
     font-size: 18px;
     color: white;
     padding: 10px;
+    transition: 1s;
 }
 
+.contact-form form button:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+}
 /*=================================================footer==========================================================*/
 footer{
     text-align: center;
