@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
 :root{
-    --main-color: #00eeff;
+    --main-color: #00abf0;
     --bg-color: #000712;
 }
 html{
@@ -14,7 +14,7 @@ html{
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
-    /*overflow: hidden;#00eeff*/
+    /*overflow: hidden;#FF014F,#00eeff,#00abf0*/
 }
 
 ::-webkit-scrollbar{
