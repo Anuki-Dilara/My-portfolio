@@ -308,7 +308,7 @@ h3 span{
     gap: 10px;
     background: transparent;
     padding: 10px 5%;
-    background: url(assets/images/digital-art-3d-blue-light-dark-wallpaper-preview.jpg);
+    background: url(assets/images/digital-art-3d-blue-light-dark.png);
     background-size: cover;
     background-position: center;
 }
@@ -378,7 +378,7 @@ h3 span{
     left: 10%;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: var(--bg-color);
     border-left: 4px solid white;
     animation: about-detail-anima 4s steps(12) infinite;
 }
