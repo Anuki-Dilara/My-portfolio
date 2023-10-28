@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
 :root{
-    --main-color: #00abf0;
+    --main-color: #00eeff;
     --bg-color: #000712;
 }
 html{
@@ -308,7 +308,7 @@ h3 span{
     gap: 10px;
     background: transparent;
     padding: 10px 5%;
-    background: url(assets/images/digital-art-3d-blue-light-dark.png);
+    background: url(assets/images/182428240217.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -378,7 +378,7 @@ h3 span{
     left: 10%;
     height: 100%;
     width: 100%;
-    background-color: var(--bg-color);
+    background-color: #060407;
     border-left: 4px solid white;
     animation: about-detail-anima 4s steps(12) infinite;
 }
@@ -661,7 +661,7 @@ h3 span{
     border-radius: .6rem;
     margin: 1rem 0;
     background: black;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .skill-content .progress .bar span{
