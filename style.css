@@ -14,7 +14,7 @@ html{
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
-    /*overflow: hidden;*/
+    /*overflow: hidden;#00eeff*/
 }
 
 ::-webkit-scrollbar{
@@ -329,7 +329,7 @@ h3 span{
 .about-img img{
     width: 90%;
     border-radius: 50%;
-    border: .2rem solid #00eeff;
+    border: .2rem solid var(--main-color);
 }
 
 .about-img .circle-spin{
@@ -342,8 +342,8 @@ h3 span{
     border-radius: 50%;
     border-top: .2rem solid transparent;
     border-bottom: .2rem solid transparent;
-    border-left: .2rem solid #00eeff;
-    border-right: .2rem solid #00eeff;
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
 
 }
 
