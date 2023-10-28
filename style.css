@@ -966,11 +966,43 @@ svg{
     flex-wrap: wrap;
 }
 .portfolio .portfolio-gallery .item{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 30.33%;
+    max-width: 30.33%;
     position: relative;
     padding: 12px;
+    margin: 5px;
     overflow: hidden;
+}
+.lines{
+    position: absolute;
+    inset: 0;
+    background: black;
+    overflow: hidden;
+}
+.lines::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 120px;
+    background: linear-gradient(transparent,#00eeff,
+    #00eeff,#00eeff,transparent);
+    animation: line-anima 4s linear infinite;
+}
+@keyframes line-anima {
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.lines::after{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: black;
 }
 .portfolio .portfolio-gallery .item .inner{
     position: relative;
@@ -992,19 +1024,20 @@ svg{
     transform: translateX(100%);
     transition: .5s ease;
     opacity: 0.8;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
 }
 
 .portfolio-gallery .item .inner .project-layer a{
     color: white;
     font-size: 40px;
-    padding: 20px;
+    padding: 10px;
 }
 .portfolio-gallery .item img{
     width: 100%;
     height: 260px;
     display: block;
-    border-radius: 25px;
+    position: relative;
+    /*border-radius: 25px;*/
 }
 .portfolio .portfolio-gallery .item:hover .project-layer{
     transform: translateY(0);
