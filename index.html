@@ -672,11 +672,11 @@
             </div>
 
             <div class="contact-form"  data-aos="fade-up" data-aos-delay="45">
-                <form action="anukidilara002@gmail.com" target="_blank" method="post">
-                    <input type="text" id="name" placeholder="Your name"><br>
-                    <input type="email" id="email" placeholder="Your email"><br>
-                    <textarea id="message" cols="50" rows="10"></textarea><br>
-                    <button>Send Message</button>
+                <form onsubmit="sendEmail(); reset(); return false;"> <!--action="anukidilara002@gmail.com" target="_blank" method="post"-->
+                    <input type="text" id="name" placeholder="Name"><br>
+                    <input type="email" id="email" placeholder="Email"><br>
+                    <textarea id="message" placeholder="Message" cols="50" rows="10"></textarea><br>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </section>
@@ -685,6 +685,7 @@
 
     <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         /*preloader*/
         var loader = document.getElementById("preloader");
@@ -751,6 +752,21 @@
 
         }
 
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "anukidilara02@gmail.com",
+                Password : "F4C7B6210FA110A964B2B729C0D4BA6D05D2",
+                To : 'anukidilara02@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Content From Enquiry",
+                Body : "Name"+ document.getElementById("name").value
+                    +"Email"+ document.getElementById("email").value
+                    +"Message"+ document.getElementById("message").value
+            }).then(
+                message => alert("message sent successfully")
+            );
+        }
 
         AOS.init({
             duration: 1000

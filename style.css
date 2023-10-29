@@ -1297,6 +1297,9 @@ svg{
     background: var(--main-color);
     color: var(--bg-color);
 }
+/*#btn{
+    cursor: pointer;
+}*/
 /*=================================================footer==========================================================*/
 footer{
     text-align: center;
