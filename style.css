@@ -308,7 +308,7 @@ h3 span{
     gap: 10px;
     background: transparent;
     padding: 10px 5%;
-    background: url(assets/images/182428240217.jpg);
+    background: url(assets/images/about-bg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -827,7 +827,7 @@ svg{
     padding: 20px 10%;
     width: 100%;
     position: relative;
-    background: url(assets/images/bg5.jpg);
+    background: url(assets/images/service-bg.jpg);
     background-size: cover;
     background-position: center;
 }
