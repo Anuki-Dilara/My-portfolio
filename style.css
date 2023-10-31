@@ -442,6 +442,9 @@ h3 span{
 
 /*=============================================================journey===============================================*/
 .journey{
+    background: url(assets/images/840843081452.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 20px 10%;
     overflow: hidden;
 }
