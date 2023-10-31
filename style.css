@@ -743,17 +743,11 @@ h3 span{
      }
 }
 /*======================================================================tools======================================================*/
-/*.tools{
-    min-height: auto;
-    background: transparent;
-    padding: 40px 10%;
-}*/
 
 .tool-container{
     box-shadow: 0 0 20px black;
     border-radius: 25px;
     display: flex;
-    /*display: grid;*/
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -783,6 +777,7 @@ h3 span{
     box-shadow: 4px 4px 5px -5px rgba(0,0,0,0.15),
     -4px -4px 5px -1px rgba(255,255,255,0.7);
 }
+
 .soft-skill .inner{
     height: 120px;
     width: 120px;
