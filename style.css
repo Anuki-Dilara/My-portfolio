@@ -56,7 +56,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: var(--bg-color);
+    background: transparent;
     transition: .3s;
 }
 .header.sticky{
@@ -102,9 +102,6 @@ hr{
     background: var(--main-color);
 }
 .home{
-    /*background: url("images");
-    background-size: cover;
-    background-position: center;*/
     position: relative;
     width: 100%;
     height: 100vh;

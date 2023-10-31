@@ -709,6 +709,9 @@
         let section = document.querySelectorAll('header nav a');
 
         window.onscroll = () =>{
+            /*sticky header*/
+            let header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY>100);
 
             /*remove icon and navbar when click navbar*/
             menuIcon.classList.remove('bx-x');
