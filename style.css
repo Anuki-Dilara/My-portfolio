@@ -580,7 +580,7 @@ h3 span{
 .skills{
     min-height: auto;
     background: transparent;
-    padding: 0px 10% 40px;
+    padding: 40px 10% ;
 }
 
 .skills-topic{
@@ -743,11 +743,11 @@ h3 span{
      }
 }
 /*======================================================================tools======================================================*/
-.tools{
+/*.tools{
     min-height: auto;
     background: transparent;
     padding: 40px 10%;
-}
+}*/
 
 .tool-container{
     box-shadow: 0 0 20px black;
@@ -761,22 +761,29 @@ h3 span{
     gap: 15px;
 }
 
-.tool{
+.tool-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #9A98A8;
+    padding: 10px;
+}
+
+.soft-skill{
     width: 160px;
     height: 160px;
     position: relative;
 }
 
-.tool .outer{
+.soft-skill .outer{
     height: 160px;
     width: 160px;
     border-radius: 50%;
     padding: 20px;
     box-shadow: 4px 4px 5px -5px rgba(0,0,0,0.15),
     -4px -4px 5px -1px rgba(255,255,255,0.7);
-
 }
-.tool .inner{
+.soft-skill .inner{
     height: 120px;
     width: 120px;
     display: flex;
@@ -793,8 +800,8 @@ h3 span{
 }
 .number {
     font-weight: 600;
-    font-size: 23px;
-    color: #555;
+    font-size: 16px;
+    color: white;
     display: grid;
     text-align: center;
 }
@@ -810,17 +817,17 @@ svg{
     top: 0;
     left: 0;
 }
-#intelij{
-    stroke-dashoffset: 165;
+#creativity{
+    stroke-dashoffset: 150;
 }
-#scene-builder{
+#workEthic{
     stroke-dashoffset: 80;
 }
-#figma{
+#adaptability{
     stroke-dashoffset: 100;
 }
-#net-beans{
-    stroke-dashoffset: 165;
+#communication{
+    stroke-dashoffset: 125;
 }
 /*====================================================services===========================================*/
 .services{
@@ -1141,36 +1148,6 @@ svg{
     text-decoration: none;
 }
 
-.cubes{
-    position: relative;
-    display: flex;
-}
-
-.cubes span{
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background: var(--main-color);
-    margin: 0 4px;
-    padding: 0 40px;
-    border-radius: 15px;
-    transform: rotate(180deg);
-    box-shadow: 0 0 0 10px var(--main-color),
-    0 0 25px var(--main-color),
-    0 0 50px var(--main-color);
-    animation: cube-anima 15s linear infinite;
-    animation-duration: calc(125s / var(--i));
-    z-index: -10;
-    opacity: 0.2;
-}
-@keyframes cube-anima{
-    0%{
-        transform: translateY(60vh) scale(0);
-    }
-    100%{
-        transform: translateY(-080vh) scale(1);
-    }
-}
 /*==========================================================gallery===============================================*/
 .gallery{
     position: relative;
@@ -1744,6 +1721,11 @@ footer span{
     .education-content .content p {
         font-size: 14px;
     }
+    .skills-sub-topic {
+        font-size: 20px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
     .portfolio-gallery .item img {
         height: auto;
     }
@@ -1789,6 +1771,11 @@ footer span{
     .about-content p {
         font-size: 12px;
         margin: 20px;
+    }
+    .skills-sub-topic {
+        font-size: 18px;
+        padding-left: 4px;
+        padding-right: 4px;
     }
     .face-front, .face-back {
         width: 250px;
